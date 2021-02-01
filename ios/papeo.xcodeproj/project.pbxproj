@@ -20,6 +20,24 @@
 		46386F6AB9795FB6F89CBE25 /* libPods-papeo-papeoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A58A402DCF30149DB66944 /* libPods-papeo-papeoTests.a */; };
 		4F2CB7E56DD5D32C7554EA19 /* libPods-papeo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 629180F2B48E2C8210634250 /* libPods-papeo.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		3C4D6091F388488FA692D9C1 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2386FDD845384ADE8112B853 /* SF-Pro-Display-Black.otf */; };
+		EA0AEE5F7247401A82C78A02 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 895A4826C20644F0856D1704 /* SF-Pro-Display-BlackItalic.otf */; };
+		3A2202AFA7234970B7CEB62E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 350CE8EB5C74454DAC683CB5 /* SF-Pro-Display-Bold.otf */; };
+		F52D92CD43FB44FBA3DAA66F /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDD579471B4D45B2A67D627F /* SF-Pro-Display-BoldItalic.otf */; };
+		9D4366A1FEA84FECB735B731 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCF932FE9176497AB77BA6CE /* SF-Pro-Display-Heavy.otf */; };
+		03E8C4B790E34E0A83E5E627 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F23B1124A2D74895BF624ABC /* SF-Pro-Display-HeavyItalic.otf */; };
+		2B150253FE6F4CCC89A4B100 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F677CDFA1D0B496AB2BD64B2 /* SF-Pro-Display-Light.otf */; };
+		E4BEC22F323B4C4F9E7A6661 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ADDB0D6A924347B6A1BA1FDF /* SF-Pro-Display-LightItalic.otf */; };
+		AC78C78BC6D14ADBA8B6795D /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A291B58756514351862EDDDC /* SF-Pro-Display-Medium.otf */; };
+		50D80D2A16B64199B39A8EBC /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722255B53CA847669B483C9F /* SF-Pro-Display-MediumItalic.otf */; };
+		26E3BDB464764E359EEA348D /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36F6822ADB84444F9E9D1E45 /* SF-Pro-Display-Regular.otf */; };
+		B22A182B257B41628BD285A8 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 284DDFC262454E0D8EC62B53 /* SF-Pro-Display-RegularItalic.otf */; };
+		82453C9ECDAF46E59F96DE1B /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21583937B7FF4FD5BEB60DD1 /* SF-Pro-Display-Semibold.otf */; };
+		72F9622A58F242DB92E6873C /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF74E8505A7B42F08074E7D7 /* SF-Pro-Display-SemiboldItalic.otf */; };
+		DEAA184A03DF46AF87A7654E /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24CC60C1DD8E463899C3A8D3 /* SF-Pro-Display-Thin.otf */; };
+		6FB001CB4C8A41C7953A1DC5 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59A21ABD47384057BEAA7822 /* SF-Pro-Display-ThinItalic.otf */; };
+		38EA36CA3BE9416B81CE0B14 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EF5DB7A3BD54C3CAA3DFD9A /* SF-Pro-Display-Ultralight.otf */; };
+		DE1B48D08A2B4DB99416B5D4 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 061B11CF5F6E4A369725D888 /* SF-Pro-Display-UltralightItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +85,24 @@
 		E9A500A53B9D7724188C37A2 /* Pods-papeo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-papeo-tvOS.release.xcconfig"; path = "Target Support Files/Pods-papeo-tvOS/Pods-papeo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		2386FDD845384ADE8112B853 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Black.otf"; path = "../src/assets/fonts/SF-Pro-Display-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		895A4826C20644F0856D1704 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-BlackItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		350CE8EB5C74454DAC683CB5 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDD579471B4D45B2A67D627F /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-BoldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCF932FE9176497AB77BA6CE /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Heavy.otf"; path = "../src/assets/fonts/SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F23B1124A2D74895BF624ABC /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-HeavyItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F677CDFA1D0B496AB2BD64B2 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Light.otf"; path = "../src/assets/fonts/SF-Pro-Display-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ADDB0D6A924347B6A1BA1FDF /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-LightItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A291B58756514351862EDDDC /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Medium.otf"; path = "../src/assets/fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		722255B53CA847669B483C9F /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-MediumItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		36F6822ADB84444F9E9D1E45 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		284DDFC262454E0D8EC62B53 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-RegularItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21583937B7FF4FD5BEB60DD1 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF74E8505A7B42F08074E7D7 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-SemiboldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		24CC60C1DD8E463899C3A8D3 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Thin.otf"; path = "../src/assets/fonts/SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59A21ABD47384057BEAA7822 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-ThinItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8EF5DB7A3BD54C3CAA3DFD9A /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Ultralight.otf"; path = "../src/assets/fonts/SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		061B11CF5F6E4A369725D888 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-UltralightItalic.otf"; path = "../src/assets/fonts/SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +200,7 @@
 				00E356EF1AD99517003FC87E /* papeoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				B83882318A9F39F5895AEC27 /* Pods */,
+				48A841C6BA70463E83F838DA /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,21 +218,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B83882318A9F39F5895AEC27 /* Pods */ = {
-			isa = PBXGroup;
+		48A841C6BA70463E83F838DA /* Resources */ = {
+			isa = "PBXGroup";
 			children = (
-				C736FD922012DB0E2D45ACBC /* Pods-papeo.debug.xcconfig */,
-				67C600DDBB8751A8F3973B08 /* Pods-papeo.release.xcconfig */,
-				A95370AA29AF1C9376F0E959 /* Pods-papeo-papeoTests.debug.xcconfig */,
-				05837C822C58DF264CBD66BD /* Pods-papeo-papeoTests.release.xcconfig */,
-				6490C4A81151A64F2249FF20 /* Pods-papeo-tvOS.debug.xcconfig */,
-				E9A500A53B9D7724188C37A2 /* Pods-papeo-tvOS.release.xcconfig */,
-				A4B934BF34B60BAE78B94F5B /* Pods-papeo-tvOSTests.debug.xcconfig */,
-				C4DFD14230B91086CC75F1A9 /* Pods-papeo-tvOSTests.release.xcconfig */,
+				2386FDD845384ADE8112B853 /* SF-Pro-Display-Black.otf */,
+				895A4826C20644F0856D1704 /* SF-Pro-Display-BlackItalic.otf */,
+				350CE8EB5C74454DAC683CB5 /* SF-Pro-Display-Bold.otf */,
+				BDD579471B4D45B2A67D627F /* SF-Pro-Display-BoldItalic.otf */,
+				DCF932FE9176497AB77BA6CE /* SF-Pro-Display-Heavy.otf */,
+				F23B1124A2D74895BF624ABC /* SF-Pro-Display-HeavyItalic.otf */,
+				F677CDFA1D0B496AB2BD64B2 /* SF-Pro-Display-Light.otf */,
+				ADDB0D6A924347B6A1BA1FDF /* SF-Pro-Display-LightItalic.otf */,
+				A291B58756514351862EDDDC /* SF-Pro-Display-Medium.otf */,
+				722255B53CA847669B483C9F /* SF-Pro-Display-MediumItalic.otf */,
+				36F6822ADB84444F9E9D1E45 /* SF-Pro-Display-Regular.otf */,
+				284DDFC262454E0D8EC62B53 /* SF-Pro-Display-RegularItalic.otf */,
+				21583937B7FF4FD5BEB60DD1 /* SF-Pro-Display-Semibold.otf */,
+				FF74E8505A7B42F08074E7D7 /* SF-Pro-Display-SemiboldItalic.otf */,
+				24CC60C1DD8E463899C3A8D3 /* SF-Pro-Display-Thin.otf */,
+				59A21ABD47384057BEAA7822 /* SF-Pro-Display-ThinItalic.otf */,
+				8EF5DB7A3BD54C3CAA3DFD9A /* SF-Pro-Display-Ultralight.otf */,
+				061B11CF5F6E4A369725D888 /* SF-Pro-Display-UltralightItalic.otf */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Resources;
 			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +388,24 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3C4D6091F388488FA692D9C1 /* SF-Pro-Display-Black.otf in Resources */,
+				EA0AEE5F7247401A82C78A02 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				3A2202AFA7234970B7CEB62E /* SF-Pro-Display-Bold.otf in Resources */,
+				F52D92CD43FB44FBA3DAA66F /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				9D4366A1FEA84FECB735B731 /* SF-Pro-Display-Heavy.otf in Resources */,
+				03E8C4B790E34E0A83E5E627 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				2B150253FE6F4CCC89A4B100 /* SF-Pro-Display-Light.otf in Resources */,
+				E4BEC22F323B4C4F9E7A6661 /* SF-Pro-Display-LightItalic.otf in Resources */,
+				AC78C78BC6D14ADBA8B6795D /* SF-Pro-Display-Medium.otf in Resources */,
+				50D80D2A16B64199B39A8EBC /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				26E3BDB464764E359EEA348D /* SF-Pro-Display-Regular.otf in Resources */,
+				B22A182B257B41628BD285A8 /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				82453C9ECDAF46E59F96DE1B /* SF-Pro-Display-Semibold.otf in Resources */,
+				72F9622A58F242DB92E6873C /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				DEAA184A03DF46AF87A7654E /* SF-Pro-Display-Thin.otf in Resources */,
+				6FB001CB4C8A41C7953A1DC5 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				38EA36CA3BE9416B81CE0B14 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				DE1B48D08A2B4DB99416B5D4 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
