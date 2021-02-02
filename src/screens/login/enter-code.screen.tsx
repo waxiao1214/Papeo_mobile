@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { EDIT_CODE_SENDING1, EDIT_CODE_SENDING2 } from '../../constant/login/data'
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Feature from 'react-native-vector-icons/Feather';
 import Button from '../../components/Button';
@@ -17,6 +17,7 @@ import {
 
 interface EnterCode {
   phoneNumber:string,
+  onEditNumber:Function
 }
 
 const EnterCode = (props:EnterCode) => {
@@ -25,14 +26,21 @@ const EnterCode = (props:EnterCode) => {
   const [timing, setTiming] = useState(30)
   const [resendCode, setResendCode] = useState(false)
 
+  let timeout:ReturnType<typeof setTimeout>;
+  
   useEffect(() => {
     if(timing > 0)
-      setTimeout(function() {
+      timeout = setTimeout(function() {
         setTiming(timing - 1)
       }, 1000)
     if(timing === 0)
       setResendCode(true)
   }, [timing])
+
+  const onEditNumber = () => {
+    props.onEditNumber();
+    clearTimeout(timeout)
+  }
 
   const onResendCode = () => {
     setTiming(30)
@@ -45,9 +53,11 @@ const EnterCode = (props:EnterCode) => {
       <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
         <Text style={{...styles.white, ...styles.bold, textAlign: 'center'}}>
           {`${props.phoneNumber}`}
-        </Text>
-        <Feather name='edit-3' style={styles.editIcon} color={Colors.$primary} />
-        <Text style={{color: Colors.$primary}}>Edit</Text>
+        </Text>        
+        <TouchableOpacity style={{display: 'flex', flexDirection: 'row'}} onPress={e => onEditNumber()}>
+          <Feather name='edit-3' style={styles.editIcon} color={Colors.$primary} />
+          <Text style={{color: Colors.$primary}}>Edit</Text>
+        </TouchableOpacity>
       </View>
       <CodeField
         ref={ref}

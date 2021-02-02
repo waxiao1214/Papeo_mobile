@@ -3,15 +3,19 @@ import { ImageBackground, SafeAreaView, Text, View } from 'react-native';
 import styles from '../../styles/screens/login.style';
 import { 
   LOGIN_TITLE, 
-  DESCRIPTION, 
+  DESCRIPTION,
   LOGIN,
   CODE_EDIT,
   CODE_EDIT_TITLE,
   CODE_EDIT_DESCRIPTION,
+  EDIT_NUMBER,
+  EDIT_NUM_DESCRIPTION,
+  EDIT_NUM_TITLE,
 } from '../../constant/login/data';
 import LoginScreen from './login-screen';
 import Colors from '../../styles/colors/colors';
 import EnterCode from './enter-code.screen';
+import ResetMobileScreen from './reset-moblie.screen';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
@@ -30,13 +34,26 @@ const Login = () => {
       case LOGIN:
         return <LoginScreen onLogin={onLogin}/>
       case CODE_EDIT:
-        return <EnterCode phoneNumber={'7127172637162'}/>
+        return <EnterCode 
+          phoneNumber={'7127172637162'}
+          onEditNumber={() => {
+            setStatus(EDIT_NUMBER)
+            setTitle(EDIT_NUM_TITLE)
+            setDescription(EDIT_NUM_DESCRIPTION)
+          }}
+        />
+      case EDIT_NUMBER:
+        return <ResetMobileScreen 
+          onReturn={() => {
+            onLogin()
+          }}
+        />
     }
   }
   return (
     <ImageBackground source={BACK_IMAGE} style={{flex:1}}>
       <SafeAreaView style={styles.container}>
-        <View style={{paddingLeft: 20, paddingRight: 20, flex: 1}}>
+        <View style={{paddingLeft: 20, paddingRight: 20, flex: 1, position: 'relative'}}>
           <View style={styles.header}>
             <Text style={{...styles.f20, ...styles.white, ...styles.bold, textAlign: 'center'}}>
               {`${title}`}
@@ -46,7 +63,7 @@ const Login = () => {
               {`${description}`}
             </Text>
           </View>
-          <View style={{position: 'relative', flex: 1}}>
+          <View style={{flex: 1}}>
             {/* screens */}
             {renderBody()}
             {/* terms and conditions */}
@@ -68,4 +85,3 @@ const Login = () => {
 }
 
 export default Login;
-
