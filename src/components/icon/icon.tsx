@@ -81,8 +81,7 @@ import VideoPlayIcon from "../assets/icons/videoPlayIcon.svg";
 
 const DEFAULT_ICON_SIZE = 24;
 
-const Icon: React.FC<IconProps> = ({ name, size, color }) => {
-
+const Icon: React.FC<IconProps> = ({ name, size }) => {
     switch(name) {
         case 'activity':    return (<ActivityIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE}/>)
         case 'arrow-left':  return (<ArrowLeftIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
