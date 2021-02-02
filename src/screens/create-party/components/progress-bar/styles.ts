@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "../../../../styles";
-export const styles = StyleSheet.create({
+
+export default StyleSheet.create({
     container: {
         justifyContent: 'center',
         borderRadius: 10,
@@ -15,5 +16,20 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         height: 6,
         width: '9.090909090909092%'
+    },
+
+    title: {
+        fontFamily: "SFProDisplay-Regular",
+        fontSize: 14,
+        color: 'white',
+        marginRight: 18,
+    },
+
+    barContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingLeft: 24,
+        paddingRight: 24,
+        marginTop: 7,
     },
 });

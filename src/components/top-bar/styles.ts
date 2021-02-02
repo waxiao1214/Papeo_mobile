@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 
-export const styles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         height: 100 - getStatusBarHeight(),
         flexDirection: 'row',

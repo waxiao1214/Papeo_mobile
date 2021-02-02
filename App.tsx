@@ -9,7 +9,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React, { ReactElement } from 'react';
-import CreatePartyPage from './src/screens/create-party/create-party.screen';
+import CreatePartyScreen from './src/screens/create-party/create-party.screen';
 
 const Stack = createStackNavigator();
 
@@ -19,7 +19,7 @@ const App: () => ReactElement = () => {
       <Stack.Navigator>
         <Stack.Screen
           name={"create-party"}
-          component={CreatePartyPage}
+          component={CreatePartyScreen}
           options={{
             headerShown: false,
           }}
