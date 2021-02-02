@@ -12,10 +12,10 @@ import {
   EDIT_NUM_DESCRIPTION,
   EDIT_NUM_TITLE,
 } from '../../constant/login/data';
-import LoginScreen from './login-screen';
+import LoginScreen from './Login';
 import Colors from '../../styles/colors/colors';
-import EnterCode from './enter-code.screen';
-import ResetMobileScreen from './reset-moblie.screen';
+import EnterCode from './EnterCode';
+import EditNumber from './EditMobileNum';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
@@ -43,7 +43,7 @@ const Login = () => {
           }}
         />
       case EDIT_NUMBER:
-        return <ResetMobileScreen 
+        return <EditNumber 
           onReturn={() => {
             onLogin()
           }}

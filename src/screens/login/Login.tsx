@@ -4,7 +4,7 @@ import styles from '../../styles/screens/login.style';
 import Button from '../../components/Button';
 import SelectPhoneNumber from '../../components/SelectPhoneNumber'
 import Colors from '../../styles/colors/colors';
-import SelectCountryModal from './select-country.modal';
+import SelectCountryModal from '../../components/Modals/SelectCountryModal';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
@@ -23,7 +23,7 @@ const LoginScreen = (props:LoginScreenProps) => {
     <>
       <SelectCountryModal 
         open={openCountryModal}
-        onClose={e => setOpenCountryModal(!openCountryModal)}
+        onClose={() => setOpenCountryModal(!openCountryModal)}
       />
       <View style={{marginTop: 30}}>
         <SelectPhoneNumber onPress={e => setOpenCountryModal(!openCountryModal)}/>
