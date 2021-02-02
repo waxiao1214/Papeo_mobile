@@ -1,6 +1,7 @@
+import React from 'react';
 import IconProps from './icon.interface';
-import ActivityIcon from "../assets/icons/activityIcon.svg";
-import ArrowLeftIcon from "../assets/icons/arrowIcon_left.svg";
+import ActivityIcon from "../../assets/icons/activityIcon.svg";
+import ArrowLeftIcon from "../../assets/icons/arrowIcon_left.svg";
 import ArrowRightIcon from "../assets/icons/arrowIcon_right.svg";
 import AttachIcon from "../assets/icons/attachIcon.svg";
 import BinIcon from "../assets/icons/binIcon.svg";
@@ -78,96 +79,15 @@ import UploadImageIcon from "../assets/icons/uploadImg_icon.svg";
 import VerifiedIcon from "../assets/icons/verifiedIcon.svg";
 import VideoPlayIcon from "../assets/icons/videoPlayIcon.svg";
 
+const DEFAULT_ICON_SIZE = 24;
+
 const Icon: React.FC<IconProps> = ({ name, size, color }) => {
 
     switch(name) {
-        case 'activity':    return (<ActivityIcon />)
-        case 'arrow-left':  return (<ArrowLeftIcon />)
+        case 'activity':    return (<ActivityIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE}/>)
+        case 'arrow-left':  return (<ArrowLeftIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
         default: return null;
     }
 }
 
-export default Icon
-
-/*
-
-export default {
-    ActivityIcon,
-    ArrowLeftIcon,
-    ArrowRightIcon,
-    AttachIcon,
-    BinIcon,
-    BookMarkStarOffIcon,
-    BookMarkStarOnIcon,
-    CallendarIcon,
-    CameraRecordIcon,
-    CameraIcon,
-    CameraFrontIcon,
-    CameraSideView,
-    ChatIcon,
-    CheckBoxOffIcon,
-    CheckBoxOnIcon,
-    DoubleCheckMarkIcon,
-    VerifiedVideoIcon,
-    CheckMarkIcon,
-    CloseIcon,
-    CommentSIcon,
-    CommercialIcon,
-    CommentIcon,
-    CrownIcon,
-    DropDownArrowUpIcon,
-    DropDownArrowLeftIcon,
-    DropDownArrowRightIcon,
-    DropDowArrowDownIcon,
-    EditIcon,
-    FollowerIcon,
-    FollowingIcon,
-    FreeIcon,
-    GalleryIcon,
-    FemaleOffIcon,
-    FemaleOnIcon,
-    ManOffIcon,
-    ManOnIcon,
-    OtherOffIcon,
-    OtherOnIcon,
-    GlassesOffIcon,
-    GlassesOnIcon,
-    GlassesWhiteIcon,
-    ContentHideOffIcon,
-    ContentHideOnIcon,
-    InfoIcon,
-    InvertCameraIcon,
-    LetterIcon,
-    LightIcon,
-    LikeOffIcon,
-    LikeOnIcon,
-    ListIcon,
-    LocationIcon,
-    LockOffIcon,
-    LockOnIcon,
-    CurrentLocationIcon,
-    MapIcon,
-    MapMarkerOffIcon,
-    MapMarkerOnIcon,
-    OptionsIcon,
-    PapeoCoinIcon,
-    PapeosIcon,
-    PartyIcon,
-    PrivateIcon,
-    FeedMenuIcon,
-    ReportOffIcon,
-    ReportOnIcon,
-    ScrollBarIcon,
-    IlustrationIcon,
-    SendTextIcon,
-    SettingsIcon,
-    ShareIcon,
-    StarOnIcon,
-    StarHalfIcon,
-    StarOffIcon,
-    GuyIcon,
-    TimeIcon,
-    UploadImageIcon,
-    VideoPlayIcon,
-    VerifiedIcon
-}
+export default Icon;
