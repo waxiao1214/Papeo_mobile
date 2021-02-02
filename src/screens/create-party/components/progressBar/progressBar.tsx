@@ -5,7 +5,6 @@ import { styles } from './styles';
 
 export const ProgressBar: React.FC<ProgressBarProps> = (props) => {
   const width = props.step * 100 / 11;
-  console.log(width);
   return (
     <View style={styles.container}>
       <View style={styles.bar} />

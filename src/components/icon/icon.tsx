@@ -86,6 +86,7 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
     switch(name) {
         case 'activity':    return (<ActivityIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE}/>)
         case 'arrow-left':  return (<ArrowLeftIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
+        case 'arrow-right':  return (<ArrowRightIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
         case 'close':  return (<CloseIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
         default: return null;
     }

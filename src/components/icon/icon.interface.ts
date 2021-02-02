@@ -1,5 +1,5 @@
 interface IconProps {
-    name: 'activity' | 'arrow-left' | 'close';
+    name: string;
     size?: number;
     color?: string;
 }
