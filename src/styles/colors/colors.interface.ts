@@ -1,6 +1,6 @@
 interface ColorsInterface {
-    $primary: string;
-    $secondary: string;
+  $primary: string;
+  $secondary: string;
 }
 
-export default ColorsInterface
+export default ColorsInterface;
