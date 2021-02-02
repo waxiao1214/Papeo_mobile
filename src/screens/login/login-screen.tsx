@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { ImageBackground, Text, View } from 'react-native';
+import { Modal, Text, View } from 'react-native';
 import styles from '../../styles/screens/login.style';
 import Button from '../../components/Button';
 import SelectPhoneNumber from '../../components/SelectPhoneNumber'
 import Colors from '../../styles/colors/colors';
+import SelectCountryModal from './select-country.modal';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
@@ -13,12 +14,16 @@ const LoginScreen = () => {
 
   }
   const loginWithGoogle = () => {
-
+    
   }
   return (
     <>
+      <SelectCountryModal 
+        open={openCountryModal}
+        onClose={e => setOpenCountryModal(!openCountryModal)}
+      />
       <View style={{marginTop: 30}}>
-        <SelectPhoneNumber onPress={setOpenCountryModal}/>
+        <SelectPhoneNumber onPress={e => setOpenCountryModal(!openCountryModal)}/>
       </View>
       <View style={{marginTop: 25}}>
         <Button title='Login' color={'white'} bgColor={Colors.$primary} onPress={Login}/>

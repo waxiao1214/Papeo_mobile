@@ -10,8 +10,13 @@ const ButtonStyle = StyleSheet.create({
     height: 40,
     position: 'absolute',
     top: 3,
+    marginLeft: 3,
     borderRightWidth: 1,
-    borderColor: '#666577'
+    borderColor: '#666577',
+    borderTopLeftRadius: 5,
+    alignItems: 'center',
+    paddingTop: 8,
+    borderBottomLeftRadius: 5
   },
   input: {
     height: 40, 
@@ -21,9 +26,9 @@ const ButtonStyle = StyleSheet.create({
     minHeight: 46,
     fontSize: 16,
     paddingLeft: 75,
-    color: '#7f8189',
+    color: 'white',
     backgroundColor: '#25233D',
-    opacity: 0.8
+    opacity: 0.8,
   }
 })
 

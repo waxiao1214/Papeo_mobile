@@ -1,9 +1,11 @@
 import React from 'react';
-import { TextInput, View, Button } from 'react-native';
+import { TextInput, View, TouchableHighlight, Image, Text } from 'react-native';
 import styles from '../styles/components/select-phone-number.style';
+const FLAG = require('../assets/img/flag.png')
+
 const SelectPhoneNumber = (props) => {
   const { onPress } = props;
-  const [value, onChangeText] = React.useState('Useless Placeholder');
+  const [value, onChangeText] = React.useState('');
 
   return (
     <View style={styles.container}>
@@ -11,11 +13,16 @@ const SelectPhoneNumber = (props) => {
         style={styles.input}
         onChangeText={text => onChangeText(text)}
         value={value}
+        placeholder="0000 0000 0000"
         dataDetectorTypes="phoneNumber"
       />
-      <View style={styles.country}>
-        <Button onPress={onPress} title=''/>
-      </View>
+      <TouchableHighlight style={styles.country} onPress={onPress}>
+        <View style={{display: 'flex', flexDirection: 'row'}}>
+          <Image source={FLAG} style={{width: 24, height: 24}}/>
+          {/* { have to set icon} */}
+          <Text style={{paddingLeft: 8, color: 'white', marginTop: 4}}></Text>          
+        </View>
+      </TouchableHighlight>
     </View>
   );
 }
