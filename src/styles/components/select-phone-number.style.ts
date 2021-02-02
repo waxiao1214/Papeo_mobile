@@ -1,0 +1,30 @@
+import { StyleSheet } from 'react-native';
+import Colors from '../colors/colors';
+
+const ButtonStyle = StyleSheet.create({
+  container: {
+    position: 'relative',
+  },
+  country: {
+    width: 67,
+    height: 40,
+    position: 'absolute',
+    top: 3,
+    borderRightWidth: 1,
+    borderColor: '#666577'
+  },
+  input: {
+    height: 40, 
+    borderColor: 'gray', 
+    borderWidth: 1,
+    borderRadius: 5,
+    minHeight: 46,
+    fontSize: 16,
+    paddingLeft: 75,
+    color: '#7f8189',
+    backgroundColor: '#25233D',
+    opacity: 0.8
+  }
+})
+
+export default ButtonStyle
