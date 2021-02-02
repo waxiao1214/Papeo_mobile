@@ -3,7 +3,7 @@ import Color from '../colors/colors';
 
 const LoginScreenStyle = StyleSheet.create({
   container: {
-    backgroundColor: "#25233DAF",
+    backgroundColor: "#151521DD",
     flex: 1,
     paddingLeft: 20,
     paddingRight: 20
@@ -17,8 +17,14 @@ const LoginScreenStyle = StyleSheet.create({
   f20: {
     fontSize: 20
   },
+  f16: {
+    fontSize: 16
+  },
   white: {
     color: 'white'
+  },
+  gray: {
+    color: '#585b64',
   },
   line: {
     height: 9,
@@ -41,6 +47,30 @@ const LoginScreenStyle = StyleSheet.create({
     bottom: 30, 
     width: '100%', 
     alignItems: 'center'
+  },
+  editIcon: {
+    fontSize: 16,
+    marginLeft: 15,
+    marginRight: 4
+  },
+  codeFieldRoot: {
+    marginTop: 30,
+  },
+  cell: {
+    width: 46,
+    height: 46,
+    lineHeight: 38,
+    fontSize: 30,
+    color: 'white',
+    borderWidth: 2,
+    borderColor: '#7f8187',
+    textAlign: 'center',
+    backgroundColor: '#25233D',
+    opacity:0.8,
+    borderRadius: 8
+  },
+  focusCell: {
+    borderColor: '#7f8187'
   }
 })
 

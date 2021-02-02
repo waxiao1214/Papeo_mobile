@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 const EmailScreen = () => {
   return (
-    <>
+    <View>
       <Text>Email Screen</Text>
-    </>
+    </View>
   )
 }
 

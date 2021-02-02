@@ -13,10 +13,8 @@ import Login from './src/screens/login/index';
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{flex: 1}}>
+      <StatusBar barStyle="light-content" backgroundColor='#00ff00' />
         <Login />
-      </SafeAreaView>
     </>
   );
 };

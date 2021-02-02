@@ -52,7 +52,7 @@ const SelectCountryModal = (props:CountryModalProps) => {
                 Select a country
               </Text>
               {/* have to change to icon */}
-              <Button title='X' color="white" onPress={onClose}/>
+              <Button title='X' color="white" onPress={e=> onClose()}/>
             </View>
             <TextInput 
               style={styles.searchInput}

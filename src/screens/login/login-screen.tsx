@@ -8,11 +8,14 @@ import SelectCountryModal from './select-country.modal';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
-const LoginScreen = () => {
-  const [openCountryModal, setOpenCountryModal] = useState(false)
-  const Login = () => {
+interface LoginScreenProps {
+  onLogin:Function
+}
 
-  }
+const LoginScreen = (props:LoginScreenProps) => {
+  const [openCountryModal, setOpenCountryModal] = useState(false)
+  const { onLogin } = props;
+
   const loginWithGoogle = () => {
     
   }
@@ -26,7 +29,7 @@ const LoginScreen = () => {
         <SelectPhoneNumber onPress={e => setOpenCountryModal(!openCountryModal)}/>
       </View>
       <View style={{marginTop: 25}}>
-        <Button title='Login' color={'white'} bgColor={Colors.$primary} onPress={Login}/>
+        <Button title='Login' color={'white'} bgColor={Colors.$primary} onPress={onLogin}/>
       </View>
       <Text style={{...styles.white, marginTop: 20, textAlign: 'center'}}>or</Text>
       <View style={{marginTop: 15}}>
