@@ -4,7 +4,7 @@ import styles from '../../styles/screens/login.style';
 import Button from '../../components/Button';
 import SelectPhoneNumber from '../../components/SelectPhoneNumber'
 import Colors from '../../styles/colors/colors';
-import SelectCountryModal from './select-country.modal';
+import SelectCountryModal from './SelectCountry';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
