@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import * as Progress from 'react-native-progress';
+import { View } from 'react-native';
+import ProgressBarProps from './progressBar.interface';
+import { styles } from './styles';
 
-export const ProgressBar: React.FC = () => {
+export const ProgressBar: React.FC<ProgressBarProps> = (props) => {
+  const width = props.step * 100 / 11;
+  console.log(width);
   return (
-    <View>
-        <Text>Step 1/11</Text>
-        <Progress.Bar />
+    <View style={styles.container}>
+      <View style={styles.bar} />
     </View>
   );
 };

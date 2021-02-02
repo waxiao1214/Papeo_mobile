@@ -2,8 +2,8 @@ import React from 'react';
 import IconProps from './icon.interface';
 import ActivityIcon from "../../assets/icons/activityIcon.svg";
 import ArrowLeftIcon from "../../assets/icons/arrowIcon_left.svg";
-import ArrowRightIcon from "../assets/icons/arrowIcon_right.svg";
-import AttachIcon from "../assets/icons/attachIcon.svg";
+import ArrowRightIcon from "../../assets/icons/arrowIcon_right.svg";
+import AttachIcon from "../../assets/icons/attachIcon.svg";
 import BinIcon from "../assets/icons/binIcon.svg";
 import BookMarkStarOffIcon from "../assets/icons/bookmarkStarIcon_off.svg";
 import BookMarkStarOnIcon from "../assets/icons/bookmarkStarIcon_on.svg";
@@ -18,7 +18,7 @@ import CheckBoxOnIcon from "../assets/icons/checkboxIcon_on.svg";
 import DoubleCheckMarkIcon from "../assets/icons/checkmarkIcon_doubleCheckmarks.svg";
 import VerifiedVideoIcon from "../assets/icons/checkmarkIcon_veryfiedVideo.svg";
 import CheckMarkIcon from "../assets/icons/checkmarkIcon_white.svg";
-import CloseIcon from "../assets/icons/closeIcon.svg";
+import CloseIcon from "../../assets/icons/closeIcon.svg";
 import CommentSIcon from "../assets/icons/commentsIcon.svg";
 import CommercialIcon from "../assets/icons/commercialIcon.svg";
 import CommentIcon from "../assets/icons/conentIcon.svg";
@@ -86,6 +86,7 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
     switch(name) {
         case 'activity':    return (<ActivityIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE}/>)
         case 'arrow-left':  return (<ArrowLeftIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
+        case 'close':  return (<CloseIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />)
         default: return null;
     }
 }
