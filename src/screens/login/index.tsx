@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ImageBackground, Text, View } from 'react-native';
 import styles from '../../styles/screens/login.style';
 import { LOGIN_TITLE, DESCRIPTION } from '../../constant/login/data';
-import LoginScreen from './login-screen';
+import LoginScreen from './Login';
 import Colors from '../../styles/colors/colors';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
