@@ -26,14 +26,12 @@ import VerifyEmail from './VerifyEmail';
 
 const screenHeight = Math.round(Dimensions.get('window').height);
 
-const screenHeight = Math.round(Dimensions.get('window').height);
-
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
 const Login = () => {
-  const [title, setTitle] = useState(VERIFY_EMAIL_TITLE)
-  const [description, setDescription] = useState(VERIFY_EMAIL_DESCRIPTION)
-  const [status, setStatus] = useState(VERIFY_EMAIL)
+  const [title, setTitle] = useState(LOGIN_TITLE)
+  const [description, setDescription] = useState(DESCRIPTION)
+  const [status, setStatus] = useState(LOGIN)
 
   const onLogin = () => {
     setTitle(CODE_EDIT_TITLE)
