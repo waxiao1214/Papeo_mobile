@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Color from '../colors/colors';
 
 const LoginScreenStyle = StyleSheet.create({
@@ -37,9 +37,9 @@ const LoginScreenStyle = StyleSheet.create({
     backgroundColor: 'white'
   },
   terms: {
-    position: 'absolute', 
-    bottom: 30, 
-    width: '100%', 
+    width: '100%',
+    // flex: 1,
+    justifyContent: 'flex-end',
     alignItems: 'center'
   }
 })

@@ -14,9 +14,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{flex: 1}}>
         <Login />
-      </SafeAreaView>
     </>
   );
 };
