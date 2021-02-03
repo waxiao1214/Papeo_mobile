@@ -30,7 +30,7 @@ import DropDowArrowDownIcon from '../assets/icons/dropDownArrowIcon_down.svg';
 import EditIcon from '../assets/icons/editIcon.svg';
 import FollowerIcon from '../assets/icons/followerIcon.svg';
 import FollowingIcon from '../assets/icons/followingIcon.svg';
-import FreeIcon from '../assets/icons/freeIcon.svg';
+import FreeIcon from '../../assets/icons/freeIcon.svg';
 import GalleryIcon from '../assets/icons/galleryIcon.svg';
 import FemaleOffIcon from '../assets/icons/genderIcon_female_off.svg';
 import FemaleOnIcon from '../assets/icons/genderIcon_female_on.svg';
@@ -151,6 +151,14 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
     case 'location-me':
       return (
         <CurrentLocationIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'free':
+      return (
+        <FreeIcon
           width={size || DEFAULT_ICON_SIZE}
           height={size || DEFAULT_ICON_SIZE}
           color={color || DEFAULT__ICON_COLOR}
