@@ -73,7 +73,7 @@ import ShareIcon from '../assets/icons/shareIcon.svg';
 import StarHalfIcon from '../assets/icons/starIcon_halfOn.svg';
 import StarOnIcon from '../assets/icons/starIcon_on.svg';
 import StarOffIcon from '../assets/icons/starIcon_off.svg';
-import GuyIcon from '../assets/icons/svgGuy.svg';
+import GuyIcon from '../../assets/icons/svgGuy.svg';
 import TimeIcon from '../assets/icons/timeIcon.svg';
 import UploadImageIcon from '../assets/icons/uploadImg_icon.svg';
 import VerifiedIcon from '../assets/icons/verifiedIcon.svg';
@@ -159,6 +159,14 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
     case 'free':
       return (
         <FreeIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'guy':
+      return (
+        <GuyIcon
           width={size || DEFAULT_ICON_SIZE}
           height={size || DEFAULT_ICON_SIZE}
           color={color || DEFAULT__ICON_COLOR}

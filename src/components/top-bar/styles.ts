@@ -4,7 +4,7 @@ import { Colors } from '../../styles';
 
 export default StyleSheet.create({
   container: {
-    height: 100 - getStatusBarHeight(),
+    minHeight: 100 - getStatusBarHeight(),
     flexDirection: 'row',
     paddingLeft: 24,
     paddingRight: 24,
@@ -15,6 +15,7 @@ export default StyleSheet.create({
     fontFamily: 'SFProDisplay-Bold',
     fontSize: 24,
     color: 'white',
+    // marginTop: -8,
     marginLeft: 16,
   },
   close: {
@@ -33,5 +34,9 @@ export default StyleSheet.create({
     paddingRight: 6.5,
     left: 16,
     bottom: -16,
+  },
+  date: {
+    color: '#585b64',
+    marginLeft: 56,
   },
 });

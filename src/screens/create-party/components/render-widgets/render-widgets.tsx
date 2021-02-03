@@ -8,6 +8,7 @@ import CreatePartyLocationWidget from '../../widgets/create-party-location/creat
 import CreatePartyDateWidget from '../../widgets/create-party-date/create-party-date.widget';
 import CreatePartyGuestInfoWidget from '../../widgets/create-party-guest-info/create-party-guest-info.widget';
 import CreatePartyPaymentsWidget from '../../widgets/create-party-payments/create-party-payments.widget';
+import CreatePartyGuestLimitWidget from '../../widgets/create-party-guest-limit/create-party-guest-limit.widget';
 
 const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
   switch (step) {
@@ -27,6 +28,8 @@ const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
       return <CreatePartyGuestInfoWidget />;
     case 8:
       return <CreatePartyPaymentsWidget />;
+    case 9:
+      return <CreatePartyGuestLimitWidget />;
     default:
       return null;
   }
