@@ -42,7 +42,6 @@ export default StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'BalooDa2-SemiBold',
     fontWeight: '600',
     fontSize: 20,
     lineHeight: 24,
@@ -54,7 +53,6 @@ export default StyleSheet.create({
   },
 
   subtitle: {
-    fontFamily: 'BalooDa2-SemiBold',
     fontWeight: '600',
     fontSize: 28,
     lineHeight: 30,
@@ -72,14 +70,12 @@ export default StyleSheet.create({
   },
 
   textTitle: {
-    fontFamily: 'BalooDa2-SemiBold',
     fontWeight: '600',
     fontSize: 18,
     color: '#4E4640',
   },
 
   subText: {
-    fontFamily: 'BalooDa2-Medium',
     fontWeight: '500',
     fontSize: 12,
     lineHeight: 18,
