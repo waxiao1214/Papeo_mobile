@@ -31,6 +31,10 @@ const Login = () => {
     setDescription(CODE_EDIT_DESCRIPTION)
     setStatus(CODE_EDIT)
   }
+  const onPhoneCodeSubmit = () => {
+    
+  }
+
   const renderBody = () => {
     switch(status){
       case LOGIN:
@@ -43,6 +47,7 @@ const Login = () => {
             setTitle(EDIT_NUM_TITLE)
             setDescription(EDIT_NUM_DESCRIPTION)
           }}
+          onSubmit={() => onPhoneCodeSubmit()}
         />
       case EDIT_NUMBER:
         return <EditNumber 

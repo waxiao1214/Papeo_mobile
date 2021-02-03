@@ -17,7 +17,8 @@ import {
 
 interface EnterCode {
   phoneNumber:string,
-  onEditNumber:Function
+  onEditNumber:Function,
+  onSubmit:Function
 }
 
 const EnterCode = (props:EnterCode) => {
@@ -78,7 +79,7 @@ const EnterCode = (props:EnterCode) => {
         )}
       />
       <View style={{marginTop: 20}}>
-        <Button title='Submit' color={'white'} bgColor={Colors.$primary} onPress={() => {}}/>
+        <Button title='Submit' color={'white'} bgColor={Colors.$primary} onPress={props.onSubmit}/>
       </View>
       { resendCode ? 
         <View style={{marginTop: 20}}>
