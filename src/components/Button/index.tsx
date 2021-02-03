@@ -23,6 +23,7 @@ const CustomButton = (props:ButtonProps) => {
       flexDirection: 'row',
       justifyContent: 'center'
       }}
+      onPress={() => onPress()}
     >
       <View style={{marginTop: 8}}>{icon}</View>
       <Text 
@@ -32,10 +33,9 @@ const CustomButton = (props:ButtonProps) => {
           marginTop: 8,
           marginLeft: 8
         }} 
-        onPress={() => onPress()}
       >
-          {title}
-        </Text>
+        {title}
+      </Text>
     </TouchableOpacity>
   )
 }

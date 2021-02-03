@@ -21,7 +21,7 @@ const ButtonStyle = StyleSheet.create({
     minHeight: 46,
     fontSize: 16,
     paddingLeft: 75,
-    color: '#7f8189',
+    color: 'white',
     backgroundColor: '#25233D',
     opacity: 0.8
   }
