@@ -1,6 +1,6 @@
 interface IconProps {
-  name: 'activity' | 'arrow-left';
-  size: number;
+  name: string;
+  size?: number;
   color?: string;
 }
 

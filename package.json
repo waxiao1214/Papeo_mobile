@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint --ext .tsx --ext .ts src/",
-    "format": "prettier --check ./src",
+    "format": "prettier --check ./src"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
@@ -22,7 +22,9 @@
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.17.1",
+    "react-native-status-bar-height": "^2.6.0",
     "react-native-svg": "^12.1.0",
+    "react-native-tags": "^2.2.0",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8"
