@@ -11,20 +11,23 @@ import {
   EDIT_NUMBER,
   EDIT_NUM_DESCRIPTION,
   EDIT_NUM_TITLE,
+  ENTER_EMAIL,
+  ENTER_EMAIL_TITLE
 } from '../../constant/login/data';
 import LoginScreen from './Login';
 import Colors from '../../styles/colors/colors';
 import EnterCode from './EnterCode';
 import EditNumber from './EditMobileNum';
+import EnterEmail from './EnterEmail';
 
 const screenHeight = Math.round(Dimensions.get('window').height);
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
 const Login = () => {
-  const [title, setTitle] = useState(LOGIN_TITLE)
-  const [description, setDescription] = useState(DESCRIPTION)
-  const [status, setStatus] = useState(LOGIN)
+  const [title, setTitle] = useState(ENTER_EMAIL_TITLE)
+  const [description, setDescription] = useState('')
+  const [status, setStatus] = useState(ENTER_EMAIL)
 
   const onLogin = () => {
     setTitle(CODE_EDIT_TITLE)
@@ -55,6 +58,8 @@ const Login = () => {
             onLogin()
           }}
         />
+      case ENTER_EMAIL:
+        return <EnterEmail />
     }
   }
   return (
