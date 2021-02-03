@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const TermsStyle = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     backgroundColor: '#25233D',
     flex: 1,
@@ -48,6 +48,4 @@ const TermsStyle = StyleSheet.create({
   mt8: {
     marginTop: 14
   },
-})
-
-export default TermsStyle;
+});
