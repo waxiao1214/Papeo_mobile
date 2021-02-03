@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Text, Modal, View, SafeAreaView, TextInput, Button, FlatList, TouchableOpacity } from 'react-native';
 import styles from '../../styles/components/select-country-modal.style';
 import { countryData } from '../../constant/login/data'
-
+import AntDesign from 'react-native-vector-icons/AntDesign';
+AntDesign.loadFont()
 interface CountryModalProps {
   open:boolean,
   onClose:Function
@@ -44,21 +45,27 @@ const SelectCountryModal = (props:CountryModalProps) => {
       visible={open}
       transparent={true}
     >
-      <SafeAreaView style={{ flex: 1 }}>
-        <View style={styles.container}>
+      <View style={styles.container}>
+        <SafeAreaView style={{ flex: 1 }}>
           <View style={styles.body}>
             <View style={styles.header}>
               <Text style={styles.title}>
                 Select a country
               </Text>
               {/* have to change to icon */}
-              <Button title='X' color="white" onPress={e=> onClose()}/>
+              <TouchableOpacity onPress={() => onClose()}>
+                <AntDesign name='close' style={{
+                  fontSize: 24,
+                  color: 'white'
+                }}/>
+              </TouchableOpacity>              
             </View>
             <TextInput 
               style={styles.searchInput}
               onChangeText={text => setSearchString(text)}
               value={searchString}
               placeholder='Search country here...'
+              placeholderTextColor='#7f8189'
             />
             <FlatList 
               data={filteredContry}
@@ -66,8 +73,8 @@ const SelectCountryModal = (props:CountryModalProps) => {
               keyExtractor={item => item.countryName}
             />
           </View>
-        </View>
-      </SafeAreaView>
+        </SafeAreaView>
+      </View>
     </Modal>
   )
 }

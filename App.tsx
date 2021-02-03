@@ -13,7 +13,7 @@ import Login from './src/screens/login/index';
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor='#00ff00' />
+      <StatusBar barStyle="dark-content" />
         <Login />
     </>
   );
