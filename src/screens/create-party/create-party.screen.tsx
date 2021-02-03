@@ -18,12 +18,18 @@ const CreatePartyScreen: React.FC = () => {
     }
   };
 
+  const goNext = () => {
+    if (step < 11) {
+      setStep(step + 1);
+    }
+  };
+
   return (
     <Background>
-      <TopBar onBack={goBack} />
+      <TopBar onBack={goBack} step={step} />
       <ProgressBar step={step} />
       <RenderWidgets step={step} />
-      <NextButton step={step} />
+      <NextButton step={step} onPress={goNext} />
     </Background>
   );
 };

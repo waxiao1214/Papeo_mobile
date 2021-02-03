@@ -32,12 +32,14 @@ const CreatePartyDescriptionWidget: FC = () => {
             placeholder: '#Add tag',
             placeholderTextColor: Colors.$partyDeactive,
           }}
-          containerStyle={s.tagContainer}
           inputStyle={s.tagInput}
           inputContainerStyle={s.tagInput}
-          renderTag={({ tag, index, onPress, deleteOnPress, readyOnly }) => (
-            <TouchableOpacity style={s} key={`${tag}-${index}`}>
-              <Text>#{tag}</Text>
+          renderTag={({ tag, index, deleteOnPress }) => (
+            <TouchableOpacity
+              style={s.tagContainer}
+              key={`${tag}-${index}`}
+              onPress={deleteOnPress}>
+              <Text style={[s.tagInput, { marginRight: 8 }]}>#{tag}</Text>
               <Icon name={'close'} size={8} />
             </TouchableOpacity>
           )}
