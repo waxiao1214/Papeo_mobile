@@ -6,7 +6,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import Feature from 'react-native-vector-icons/Feather';
 import Button from '../../components/Button';
 import Colors from '../../styles/colors/colors';
-import styles from '../../styles/screens/login.style';
+import styles from './style';
 Feather.loadFont();
 
 import {
