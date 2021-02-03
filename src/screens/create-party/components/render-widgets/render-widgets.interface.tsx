@@ -1,3 +1,3 @@
 export default interface RenderWidgetsProps {
-    step: number;
+  step: number;
 }

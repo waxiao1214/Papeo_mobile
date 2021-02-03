@@ -5,20 +5,21 @@ import NextButtonProps from './next-button.interface';
 import s from './styles';
 
 const NextButton: React.FC<NextButtonProps> = ({ step }) => {
+  const setStep = (nextStep: number) => {
+    // action nextStep
+  };
 
-    const setStep = (nextStep: number) => {
-        // action nextStep
-    }
-
-    return (
-        <TouchableOpacity style={s.nextBtnWrapper} onPress={() => {
-            if (step < 11) {
-                setStep(step + 1);
-            }
-        }}>
-            <Icon name={"arrow-right"} size={16}/>
-        </TouchableOpacity>
-    );
+  return (
+    <TouchableOpacity
+      style={s.nextBtnWrapper}
+      onPress={() => {
+        if (step < 11) {
+          setStep(step + 1);
+        }
+      }}>
+      <Icon name={'arrow-right'} size={16} />
+    </TouchableOpacity>
+  );
 };
 
-export default NextButton
+export default NextButton;
