@@ -49,12 +49,12 @@ const EnterCode = (props:EnterCode) => {
 
   const [prop, getCellOnLayoutHandler] = useClearByFocusCell({ value, setValue });
   return (
-    <View style={{marginTop: -16}}>
+    <View style={{marginTop: -18}}>
       <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
         <Text style={{...styles.white, ...styles.bold, textAlign: 'center'}}>
           {`${props.phoneNumber}`}
         </Text>        
-        <TouchableOpacity style={{display: 'flex', flexDirection: 'row'}} onPress={e => onEditNumber()}>
+        <TouchableOpacity style={{display: 'flex', flexDirection: 'row'}} >
           <Feather name='edit-3' style={styles.editIcon} color={Colors.$primary} />
           <Text style={{color: Colors.$primary}}>Edit</Text>
         </TouchableOpacity>
@@ -78,11 +78,11 @@ const EnterCode = (props:EnterCode) => {
         )}
       />
       <View style={{marginTop: 20}}>
-        <Button title='Submit' color={'white'} bgColor={Colors.$primary}/>
+        <Button title='Submit' color={'white'} bgColor={Colors.$primary} onPress={() => {}}/>
       </View>
       { resendCode ? 
         <View style={{marginTop: 20}}>
-          <Button title='Resend PIN code' color='white' onPress={onResendCode}/>
+          <Button title='Resend PIN code' color='white' onPress={() => {}}/>
         </View>:
         <View style={{justifyContent: 'center', marginTop: 25}}>
           <Text style={{textAlign: 'center', marginBottom: 10}}>

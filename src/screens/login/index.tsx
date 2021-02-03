@@ -63,9 +63,9 @@ const Login = () => {
             {`${description}`}
           </Text>
         </View>
-        
-        {renderBody()}
-        
+        <View style={{height: 250}}>
+          {renderBody()}
+        </View>                
         <View style={{...styles.terms, height: screenHeight- 520}}>
           <Text style={{...styles.white }}>
             {`With registration you accept the general `}

@@ -63,6 +63,7 @@ const LoginScreenStyle = StyleSheet.create({
     fontSize: 30,
     color: 'white',
     borderWidth: 2,
+    paddingTop: 3,
     borderColor: '#7f8187',
     textAlign: 'center',
     backgroundColor: '#25233D',
