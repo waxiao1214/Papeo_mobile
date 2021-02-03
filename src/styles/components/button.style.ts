@@ -7,8 +7,8 @@ const ButtonStyle = StyleSheet.create({
     borderRadius: 5,
     height: 46,
     borderWidth: 1,
-    borderColor: Colors.$primary
-  }
-})
+    borderColor: Colors.$primary,
+  },
+});
 
-export default ButtonStyle
+export default ButtonStyle;

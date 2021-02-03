@@ -6,7 +6,7 @@ const LoginSuccessScreen = () => {
     <>
       <Text>login success screen</Text>
     </>
-  )
-}
+  );
+};
 
 export default LoginSuccessScreen;

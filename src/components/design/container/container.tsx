@@ -1,27 +1,21 @@
 import React from 'react';
-import { View, SafeAreaView } from 'react-native';
-import s from './styles';
+import { View } from 'react-native';
 
 // first example, we have to make it better
 
-const Container: React.FC<any> = ({children, padding, marginTop }) => {
+const Container: React.FC<any> = ({ children, padding, marginTop }) => {
+  const containerStyle: any = {};
 
-  let containerStyle: any = {};
-
-  if(padding){
+  if (padding) {
     containerStyle['paddingLeft'] = 20;
     containerStyle['paddingRight'] = 20;
   }
 
-  if(marginTop){
+  if (marginTop) {
     containerStyle['marginTop'] = 20;
   }
 
-  return (
-    <View style={containerStyle}>
-      { children }
-    </View>
-    );
+  return <View style={containerStyle}>{children}</View>;
 };
 
 export default Container;

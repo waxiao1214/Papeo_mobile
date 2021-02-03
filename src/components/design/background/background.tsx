@@ -5,11 +5,9 @@ import s from './styles';
 const Background: React.FC = (props: any) => {
   return (
     <View style={s.container}>
-      <SafeAreaView>
-        {props.children}
-      </SafeAreaView>
+      <SafeAreaView>{props.children}</SafeAreaView>
     </View>
-    );
+  );
 };
 
 export default Background;
