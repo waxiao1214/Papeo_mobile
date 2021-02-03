@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { View, Modal, Text, Animated, Button } from 'react-native';
+import { View, Modal, Text, Animated } from 'react-native';
+import Button from '../../components/Button';
 import { useSelector, useDispatch } from 'react-redux';
 import { hideLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.action';
 import s from './styles';
+import Colors from '../../styles/colors/colors';
 
 const LoginVerifyEmailModal = () => {
   const dispatch = useDispatch();
@@ -47,14 +49,18 @@ const LoginVerifyEmailModal = () => {
         style={{}}>
         <View style={[s.centeredView]}>
           <View style={s.modalView}>
-            <Text>HEloooooo</Text>
-            <Text>HEloooooo</Text>
-            <Text>HEloooooo</Text>
-            <Text>HEloooooo</Text>
-            <Text>HEloooooo</Text>
-            <Text>HEloooooo</Text>
-            <Text>HEloooooo</Text>
-            <Button title="close" onPress={() => dispatch(hideLoginVerifyEmail())}></Button>
+            <Text style={s.title}>
+              {`An Email was sent to\nexample@outlook.com`}
+            </Text>
+            <Text style={s.subText}>
+              {`Please check your email and click the link\nto continue`}
+            </Text>
+            <Button 
+              title="Send Again" 
+              onPress={() => dispatch(hideLoginVerifyEmail())}
+              bgColor={Colors.$primary}
+              color='white'
+            />
           </View>
         </View>
       </Modal>
