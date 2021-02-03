@@ -20,7 +20,7 @@ import VerifiedVideoIcon from '../assets/icons/checkmarkIcon_veryfiedVideo.svg';
 import CheckMarkIcon from '../assets/icons/checkmarkIcon_white.svg';
 import CloseIcon from '../../assets/icons/closeIcon.svg';
 import CommentSIcon from '../assets/icons/commentsIcon.svg';
-import CommercialIcon from '../assets/icons/commercialIcon.svg';
+import CommercialIcon from '../../assets/icons/commercialIcon.svg';
 import CommentIcon from '../assets/icons/conentIcon.svg';
 import CrownIcon from '../assets/icons/crownIcon.svg';
 import DropDownArrowUpIcon from '../assets/icons/dropDownArrowIcon_up.svg';
@@ -51,8 +51,8 @@ import LikeOffIcon from '../assets/icons/likeBalloonIcon_off.svg';
 import LikeOnIcon from '../assets/icons/likeBalloonIcon_on.svg';
 import ListIcon from '../assets/icons/listIcon.svg';
 import LocationIcon from '../assets/icons/locationIcon.svg';
-import LockOffIcon from '../assets/icons/lockIcon_off.svg';
-import LockOnIcon from '../assets/icons/lockIcon_on.svg';
+import LockOffIcon from '../../assets/icons/lockIcon_off.svg';
+import LockOnIcon from '../../assets/icons/lockIcon_on.svg';
 import CurrentLocationIcon from '../assets/icons/mapCurrentLocationIcon.svg';
 import MapIcon from '../assets/icons/mapIcon.svg';
 import MapMarkerOffIcon from '../assets/icons/mapMarkerIcon_off.svg';
@@ -61,7 +61,7 @@ import OptionsIcon from '../assets/icons/optionsIcon.svg';
 import PapeoCoinIcon from '../assets/icons/papeoCoinIcon.svg';
 import PapeosIcon from '../assets/icons/papeosIcon.svg';
 import PartyIcon from '../assets/icons/partyIcon.svg';
-import PrivateIcon from '../assets/icons/privateIcon.svg';
+import PrivateIcon from '../../assets/icons/privateIcon.svg';
 import FeedMenuIcon from '../assets/icons/profileFeedMenuPapeoIcon.svg';
 import ReportOffIcon from '../assets/icons/reportIcon_off.svg';
 import ReportOnIcon from '../assets/icons/reportIcon_on.svg';
@@ -80,19 +80,74 @@ import VerifiedIcon from '../assets/icons/verifiedIcon.svg';
 import VideoPlayIcon from '../assets/icons/videoPlayIcon.svg';
 
 const DEFAULT_ICON_SIZE = 24;
+const DEFAULT__ICON_COLOR = 'white';
 
-const Icon: React.FC<IconProps> = ({ name, size }) => {
+const Icon: React.FC<IconProps> = ({ name, size, color }) => {
   switch (name) {
     case 'activity':
-      return <ActivityIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+      return (
+        <ActivityIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
     case 'arrow-left':
-      return <ArrowLeftIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+      return (
+        <ArrowLeftIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
     case 'arrow-right':
       return (
-        <ArrowRightIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />
+        <ArrowRightIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
       );
     case 'close':
-      return <CloseIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+      return (
+        <CloseIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'private':
+      return (
+        <PrivateIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'commercial':
+      return (
+        <CommercialIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'lock-on':
+      return (
+        <LockOnIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'lock-off':
+      return (
+        <LockOffIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
     default:
       return null;
   }

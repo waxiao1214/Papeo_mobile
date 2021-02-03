@@ -4,13 +4,15 @@ import TopBar from '../../components/top-bar/top-bar';
 import NextButton from './components/next-button/next-button';
 import Background from '../../components/design/background/background';
 import RenderWidgets from './components/render-widgets/render-widgets';
+import { StatusBar } from 'react-native';
 
 const CreatePartyScreen: React.FC = () => {
   const [step, setStep] = useState(1);
-  // if we use useState in Screen, then all components will rerender
-  // we have to delete it later
-  // parameter step will removed in future too
-  // remove this, if readed
+
+  /**
+   * This screen should be rerendered whenever tap the next button
+   * because we need to display the different widget.
+   */
 
   const goBack = () => {
     if (step > 1) {
@@ -26,6 +28,7 @@ const CreatePartyScreen: React.FC = () => {
 
   return (
     <Background>
+      <StatusBar barStyle={'light-content'} />
       <TopBar onBack={goBack} step={step} />
       <ProgressBar step={step} />
       <RenderWidgets step={step} />
