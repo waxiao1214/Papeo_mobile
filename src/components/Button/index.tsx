@@ -6,17 +6,17 @@ import styles from '../../styles/components/button.style';
 interface ButtonProps {
   title: string,
   icon?:any,
-  bgColor: string,
+  bgColor?: string,
   style?:object,
   color?:string,
   onPress?:Function
 }
 
-const CustomButton = (props) => {
+const CustomButton = (props:ButtonProps) => {
   const { title, icon, style, color, onPress, bgColor } = props
 
   return (
-    <View style={{
+    <TouchableOpacity style={{
       ...styles.container, 
       backgroundColor: bgColor, 
       display: 'flex',
@@ -24,9 +24,19 @@ const CustomButton = (props) => {
       justifyContent: 'center'
       }}
     >
-      <View style={{marginTop: 6}}>{icon}</View>
-      <Button title={title} color={color} onPress={onPress} />
-    </View>
+      <View style={{marginTop: 8}}>{icon}</View>
+      <Text 
+        style={{
+          color: color,
+          fontSize: 18,
+          marginTop: 8,
+          marginLeft: 8
+        }} 
+        onPress={() => onPress()}
+      >
+          {title}
+        </Text>
+    </TouchableOpacity>
   )
 }
 
