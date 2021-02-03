@@ -6,6 +6,7 @@ import CreatePartyTypeWidget from '../../widgets/create-party-type/create-party-
 import CreatePartyPrivacyWidget from '../../widgets/create-party-privacy/create-party-privacy.widget';
 import CreatePartyLocationWidget from '../../widgets/create-party-location/create-party-location.widget';
 import CreatePartyDateWidget from '../../widgets/create-party-date/create-party-date.widget';
+import CreatePartyGuestInfoWidget from '../../widgets/create-party-guest-info/create-party-guest-info.widget';
 
 const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
   switch (step) {
@@ -21,6 +22,8 @@ const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
       return <CreatePartyLocationWidget />;
     case 6:
       return <CreatePartyDateWidget />;
+    case 7:
+      return <CreatePartyGuestInfoWidget />;
     default:
       return null;
   }
