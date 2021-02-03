@@ -1,12 +1,12 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 const PapeoInputStyle = StyleSheet.create({
   container: {
-    display: 'flex'
+    display: 'flex',
   },
   input: {
-    height: 40, 
-    borderColor: 'gray', 
+    height: 40,
+    borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 5,
     minHeight: 46,
@@ -19,8 +19,8 @@ const PapeoInputStyle = StyleSheet.create({
   icon: {
     position: 'absolute',
     top: 12,
-    marginLeft: 12
-  }
-})
+    marginLeft: 12,
+  },
+});
 
 export default PapeoInputStyle;

@@ -16,11 +16,11 @@ const ButtonStyle = StyleSheet.create({
     borderTopLeftRadius: 5,
     alignItems: 'center',
     paddingTop: 8,
-    borderBottomLeftRadius: 5
+    borderBottomLeftRadius: 5,
   },
   input: {
-    height: 40, 
-    borderColor: 'gray', 
+    height: 40,
+    borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 5,
     minHeight: 46,
@@ -29,7 +29,7 @@ const ButtonStyle = StyleSheet.create({
     color: 'white',
     backgroundColor: '#25233D',
     opacity: 0.8,
-  }
-})
+  },
+});
 
-export default ButtonStyle
+export default ButtonStyle;

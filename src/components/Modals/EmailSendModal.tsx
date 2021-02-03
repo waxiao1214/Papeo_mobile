@@ -2,10 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 const EmailSendModal = () => {
-  return (
-    <>
-    </>
-  )
-}
+  return <></>;
+};
 
-export default EmailSendModal
+export default EmailSendModal;

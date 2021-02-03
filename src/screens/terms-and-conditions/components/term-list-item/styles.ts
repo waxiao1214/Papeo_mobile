@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const TermsStyle = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     backgroundColor: '#25233D',
     flex: 1,
@@ -8,19 +8,19 @@ const TermsStyle = StyleSheet.create({
   item: {
     marginBottom: 20,
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   f24: {
-    fontSize: 24
+    fontSize: 24,
   },
   bold: {
-    fontWeight: '700'
+    fontWeight: '700',
   },
   header: {
     height: 130,
     paddingLeft: 15,
     paddingRight: 20,
-    paddingTop :20,
+    paddingTop: 20,
     backgroundColor: '#25233D',
     width: '100%',
     shadowColor: '#222',
@@ -29,7 +29,7 @@ const TermsStyle = StyleSheet.create({
     shadowRadius: 5,
     elevation: 5,
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   gray: {
     color: '#585b64',
@@ -37,17 +37,15 @@ const TermsStyle = StyleSheet.create({
   body: {
     paddingLeft: 20,
     paddingRight: 20,
-    marginTop: 20
+    marginTop: 20,
   },
   white: {
-    color: 'white'
+    color: 'white',
   },
   mt4: {
-    marginTop: 2
+    marginTop: 2,
   },
   mt8: {
-    marginTop: 14
+    marginTop: 14,
   },
-})
-
-export default TermsStyle;
+});

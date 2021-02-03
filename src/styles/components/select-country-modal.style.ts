@@ -26,11 +26,11 @@ const SelectCountryModalStyle = StyleSheet.create({
   title: {
     fontSize: 24,
     color: 'white',
-    flex: 1
+    flex: 1,
   },
   header: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   searchInput: {
     height: 36,
@@ -40,21 +40,21 @@ const SelectCountryModalStyle = StyleSheet.create({
     color: 'white',
     marginTop: 20,
     borderWidth: 1,
-    borderColor: 'gray'
+    borderColor: 'gray',
   },
   countryList: {
     height: 54,
     paddingTop: 13,
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
-  phoneCode:{
-    paddingRight: 24
+  phoneCode: {
+    paddingRight: 24,
   },
   left: {
     paddingLeft: 12,
     flex: 1,
-  }
-})
+  },
+});
 
-export default SelectCountryModalStyle
+export default SelectCountryModalStyle;

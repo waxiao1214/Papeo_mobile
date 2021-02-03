@@ -3,25 +3,25 @@ import Color from '../colors/colors';
 
 const LoginScreenStyle = StyleSheet.create({
   container: {
-    backgroundColor: "#151521DD",
+    backgroundColor: '#151521DD',
     flex: 1,
     paddingLeft: 20,
-    paddingRight: 20
+    paddingRight: 20,
   },
   header: {
     marginTop: 80,
   },
   bold: {
-    fontWeight: '700'
+    fontWeight: '700',
   },
   f20: {
-    fontSize: 20
+    fontSize: 20,
   },
   f16: {
-    fontSize: 16
+    fontSize: 16,
   },
   white: {
-    color: 'white'
+    color: 'white',
   },
   gray: {
     color: '#585b64',
@@ -33,25 +33,25 @@ const LoginScreenStyle = StyleSheet.create({
     borderColor: '#FD2356',
     borderTopWidth: 1,
     marginTop: 25,
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   description: {
     marginTop: 25,
-    lineHeight: 20
+    lineHeight: 20,
   },
   button: {
-    backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   terms: {
     width: '100%',
     // flex: 1,
     justifyContent: 'flex-end',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   editIcon: {
     fontSize: 16,
     marginLeft: 15,
-    marginRight: 4
+    marginRight: 4,
   },
   codeFieldRoot: {
     marginTop: 30,
@@ -67,12 +67,12 @@ const LoginScreenStyle = StyleSheet.create({
     borderColor: '#7f8187',
     textAlign: 'center',
     backgroundColor: '#25233D',
-    opacity:0.8,
-    borderRadius: 8
+    opacity: 0.8,
+    borderRadius: 8,
   },
   focusCell: {
-    borderColor: '#7f8187'
-  }
-})
+    borderColor: '#7f8187',
+  },
+});
 
-export default LoginScreenStyle
+export default LoginScreenStyle;
