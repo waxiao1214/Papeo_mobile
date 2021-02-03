@@ -33,7 +33,7 @@ const LoginScreen = (props:LoginScreenProps) => {
       </View>
       <Text style={{...styles.white, marginTop: 20, textAlign: 'center'}}>or</Text>
       <View style={{marginTop: 15}}>
-        <Button title='Login with Google' color={'white'} onPress={loginWithGoogle}/>
+        <Button title='Login with Google' color='white' onPress={loginWithGoogle}/>
       </View>
     </>
   )

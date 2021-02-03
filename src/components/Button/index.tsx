@@ -16,9 +16,19 @@ const CustomButton = (props) => {
   const { title, icon, style, color, onPress, bgColor } = props
 
   return (
-    <View style={{...styles.container, backgroundColor: bgColor}}>
-      <Button title={title} color={color} onPress={onPress} />
-    </View>
+    <TouchableOpacity style={{...styles.container, backgroundColor: bgColor}}>
+      <Text 
+        style={{
+          color: color,
+          textAlign: 'center',
+          fontSize: 18,
+          marginTop: 10
+        }} 
+        onPress={onPress}
+      >
+        {title}
+      </Text>
+    </TouchableOpacity>
   )
 }
 

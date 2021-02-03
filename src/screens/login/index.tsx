@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ImageBackground, SafeAreaView, Text, View } from 'react-native';
+import { Dimensions } from 'react-native';
 import styles from '../../styles/screens/login.style';
 import { 
   LOGIN_TITLE, 
@@ -18,7 +19,7 @@ import EnterCode from './EnterCode';
 import EditNumber from './EditMobileNum';
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
-
+const screenHeight = Math.round(Dimensions.get('window').height)
 const Login = () => {
   const [title, setTitle] = useState(LOGIN_TITLE)
   const [description, setDescription] = useState(DESCRIPTION)
@@ -51,7 +52,7 @@ const Login = () => {
     }
   }
   return (
-    <ImageBackground source={BACK_IMAGE} style={{flex:1}}>
+    <ImageBackground source={BACK_IMAGE} style={{flex:1, height: screenHeight}}>
       <SafeAreaView style={styles.container}>
         <View style={{paddingLeft: 20, paddingRight: 20, flex: 1, position: 'relative'}}>
           <View style={styles.header}>
