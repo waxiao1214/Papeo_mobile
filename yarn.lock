@@ -1245,6 +1245,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-phone-number-input@^3.0.6":
+  "integrity" "sha512-72+yblLIzquMluZEipZxHzFMcnLZmeW3/1dkAG/iK63wQLwyMRIYk+5U+AvRahAzLs4YBfZqlhyiwOa3qCGikg=="
+  "resolved" "https://registry.npmjs.org/@types/react-phone-number-input/-/react-phone-number-input-3.0.6.tgz"
+  "version" "3.0.6"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-test-renderer@^17.0.0":
   "integrity" "sha512-nvw+F81OmyzpyIE1S0xWpLonLUZCMewslPuA8BtjSKc5XEbn8zEQBXS7KuOLHTNnSOEM2Pum50gHOoZ62tqTRg=="
   "resolved" "https://registry.npmjs.org/@types/react-test-renderer/-/react-test-renderer-17.0.0.tgz"
