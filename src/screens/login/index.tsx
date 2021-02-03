@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ImageBackground, SafeAreaView, Text, View } from 'react-native';
+import { ImageBackground, Text, View, Dimensions, SafeAreaView } from 'react-native';
 import styles from '../../styles/screens/login.style';
 import { 
   LOGIN_TITLE, 
@@ -16,6 +16,8 @@ import LoginScreen from './Login';
 import Colors from '../../styles/colors/colors';
 import EnterCode from './EnterCode';
 import EditNumber from './EditMobileNum';
+
+const screenHeight = Math.round(Dimensions.get('window').height);
 
 const BACK_IMAGE = require('../../assets/img/bg.png')
 
@@ -51,10 +53,10 @@ const Login = () => {
     }
   }
   return (
-    <ImageBackground source={BACK_IMAGE} style={{flex:1}}>
-      <SafeAreaView style={styles.container}>
-        <View style={{paddingLeft: 20, paddingRight: 20, flex: 1, position: 'relative'}}>
-          <View style={styles.header}>
+    <ImageBackground source={BACK_IMAGE} style={{flex:1, height: screenHeight}}>
+      <View style={{...styles.container, height: screenHeight}}>
+        <SafeAreaView style={{flex: 1}}>
+          <View style={{...styles.header, height: 145, overflow: 'hidden'}}>
             <Text style={{...styles.f20, ...styles.white, ...styles.bold, textAlign: 'center'}}>
               {`${title}`}
             </Text>
@@ -63,23 +65,21 @@ const Login = () => {
               {`${description}`}
             </Text>
           </View>
-          <View style={{flex: 1}}>
-            {/* screens */}
+          <View style={{height: 250}}>
             {renderBody()}
-            {/* terms and conditions */}
-            <View style={styles.terms}>
-              <Text style={{...styles.white }}>
-                {`With registration you accept the general `}
-                <Text style={{color: Colors.$primary}}>Terms</Text>
-              </Text>
-              <Text style={{...styles.white}}>
-                {`and `}
-                <Text style={{color: Colors.$primary}}>Conditions</Text>
-              </Text>
-            </View>
+          </View>                
+          <View style={{...styles.terms, height: screenHeight- 570}}>
+            <Text style={{...styles.white }}>
+              {`With registration you accept the general `}
+              <Text style={{color: Colors.$primary}}>Terms</Text>
+            </Text>
+            <Text style={{...styles.white}}>
+              {`and `}
+              <Text style={{color: Colors.$primary}}>Conditions</Text>
+            </Text>
           </View>
-        </View>
-      </SafeAreaView>
+        </SafeAreaView>
+      </View>
     </ImageBackground>
   )
 }

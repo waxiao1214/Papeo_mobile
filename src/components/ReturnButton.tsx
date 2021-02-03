@@ -12,10 +12,10 @@ const ReturnButton = (props:ReturnButtonProps) => {
       <View 
         style={{
           borderRadius: 20, 
-          backgroundColor: 'rgba(46, 35, 66, 0.6)', 
+          backgroundColor: '#25233D', 
           padding: 8
         }}>
-        <Feather name='arrow-left' color='white' size={20}/>
+        <Feather name='arrow-left' color='white' size={24}/>
       </View>        
     </TouchableOpacity>
   )

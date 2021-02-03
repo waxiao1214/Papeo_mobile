@@ -8,13 +8,14 @@
 
 import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
-import Login from './src/screens/login/index';
-
+// import Login from './src/screens/login/index';
+import TermsConditions from './src/screens/TermsCondition';
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor='#00ff00' />
-        <Login />
+      <StatusBar barStyle="dark-content" />
+        {/* <Login /> */}
+        <TermsConditions />
     </>
   );
 };
