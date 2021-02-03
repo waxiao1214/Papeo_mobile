@@ -4,6 +4,7 @@ import CreatePartyDescriptionWidget from '../../widgets/create-party-description
 import CreatePartyNameWidget from '../../widgets/create-party-name/create-party-name.widget';
 import CreatePartyTypeWidget from '../../widgets/create-party-type/create-party-type.widget';
 import CreatePartyPrivacyWidget from '../../widgets/create-party-privacy/create-party-privacy.widget';
+import CreatePartyLocationWidget from '../../widgets/create-party-location/create-party-location.widget';
 
 const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
   switch (step) {
@@ -15,6 +16,8 @@ const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
       return <CreatePartyTypeWidget />;
     case 4:
       return <CreatePartyPrivacyWidget />;
+    case 5:
+      return <CreatePartyLocationWidget />;
     default:
       return null;
   }

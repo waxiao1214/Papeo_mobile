@@ -53,7 +53,7 @@ import ListIcon from '../assets/icons/listIcon.svg';
 import LocationIcon from '../assets/icons/locationIcon.svg';
 import LockOffIcon from '../../assets/icons/lockIcon_off.svg';
 import LockOnIcon from '../../assets/icons/lockIcon_on.svg';
-import CurrentLocationIcon from '../assets/icons/mapCurrentLocationIcon.svg';
+import CurrentLocationIcon from '../../assets/icons/mapCurrentLocationIcon.svg';
 import MapIcon from '../assets/icons/mapIcon.svg';
 import MapMarkerOffIcon from '../assets/icons/mapMarkerIcon_off.svg';
 import MapMarkerOnIcon from '../assets/icons/mapMarkerIcon_on.svg';
@@ -143,6 +143,14 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
     case 'lock-off':
       return (
         <LockOffIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'location-me':
+      return (
+        <CurrentLocationIcon
           width={size || DEFAULT_ICON_SIZE}
           height={size || DEFAULT_ICON_SIZE}
           color={color || DEFAULT__ICON_COLOR}

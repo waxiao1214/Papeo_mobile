@@ -15,7 +15,15 @@ const TopBar: React.FC<TopBarProps> = ({ onBack, onClose, step }) => {
         }}>
         <Icon name={'arrow-left'} size={16} />
       </TouchableOpacity>
-      <Text style={s.title}>Create Party</Text>
+      <View>
+        <Text style={s.title}>Create Party</Text>
+        {step && step > 4 && (
+          <View style={s.badge}>
+            <Icon name={'lock-off'} size={10} />
+            <Icon name={'commercial'} size={10} />
+          </View>
+        )}
+      </View>
       <TouchableOpacity
         style={s.close}
         onPress={() => {
