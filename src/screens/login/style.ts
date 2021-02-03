@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import Color from '../colors/colors';
+import Color from '../../styles/colors/colors';
 
 const LoginScreenStyle = StyleSheet.create({
   container: {
@@ -10,6 +10,11 @@ const LoginScreenStyle = StyleSheet.create({
   },
   header: {
     marginTop: 80,
+    height: 145, 
+    overflow: 'hidden'
+  },
+  center: {
+    textAlign: 'center'
   },
   bold: {
     fontWeight: '700',
