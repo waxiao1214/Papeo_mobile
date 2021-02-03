@@ -2,11 +2,11 @@ import React from 'react';
 import { View } from 'react-native';
 import s from './styles';
 
-const Background: React.FC = (props) => {
+const Background: React.FC = (props: any) => {
 
     return (
         <View style={s.container}>
-            {props}
+            { props.children }
         </View>
     );
 }

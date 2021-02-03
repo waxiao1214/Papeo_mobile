@@ -4,16 +4,20 @@ import Icon from '../../components/icon/icon';
 import s from './styles';
 import TopBarProps from './top-bar.interface';
 
-export const TopBar: React.FC<TopBarProps> = (props) => {
+// return interface TO DO
+
+const TopBar: React.FC<TopBarProps> = ({ onBack, onClose }): any => {
   return (
     <View style={s.container}>
-        <TouchableOpacity onPress={props.onBack}>
+        <TouchableOpacity onPress={onBack}>
           <Icon name={'arrow-left'} size={16} />
         </TouchableOpacity>
         <Text style={s.title}>Create Party</Text>
-        <TouchableOpacity style={s.close} onPress={props.onClose}>
+        <TouchableOpacity style={s.close} onPress={onClose}>
           <Icon name={'close'} size={14}/>
         </TouchableOpacity>
     </View>
   );
 };
+
+export default TopBar

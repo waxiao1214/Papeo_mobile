@@ -1,4 +1,4 @@
 export default interface TopBarProps {
-    onBack: () => void;
-    onClose: () => void;
+    onBack?: any;
+    onClose?: any;
 }
