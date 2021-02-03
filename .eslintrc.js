@@ -18,12 +18,12 @@ module.exports = {
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
-    //'no-empty-function': 'off',
-    //'@typescript-eslint/no-empty-function': 'off',
-    //'@typescript-eslint/no-empty-function': 'off',
-    //'react/display-name': 'off',
-    //'react/prop-types': 'off',
-    //'prettier/prettier': 'error',
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    'react/display-name': 'off',
+    'react/prop-types': 'off',
+    'prettier/prettier': 'error',
   },
   settings: {
     react: {
