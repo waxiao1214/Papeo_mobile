@@ -15,6 +15,7 @@ export default StyleSheet.create({
   },
   warningText: {
     color: '#585b64',
-    marginLeft: 12
+    marginLeft: 12,
+    fontStyle: 'italic'
   }
 })

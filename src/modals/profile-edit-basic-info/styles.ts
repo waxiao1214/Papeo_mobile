@@ -36,7 +36,8 @@ export default StyleSheet.create({
     marginTop: 50
   },
   subText: {
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    marginLeft: 12
   },
   subTitle: {
     fontSize: 20,
@@ -61,5 +62,10 @@ export default StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     marginTop: 13
+  },
+  warning: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 30
   }
 })

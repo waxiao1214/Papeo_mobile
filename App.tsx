@@ -8,6 +8,7 @@ import ProfileEditBasicInfoModal from './src/modals/profile-edit-basic-info/prof
 import ProfileVerifyPhotoModal from './src/modals/profile-verify-photo/profile-verify-photo.modal';
 import ProfileRemoveIdentvideoModal from './src/modals/profile-remove-identvideo/profile-remove-identvideo.modal';
 import ProfileEditPhotoModal from './src/modals/profile-edit-photo/profile-edit-photo.modal';
+import ProfileEditDescriptionModal from './src/modals/profile-edit-description/profile-edit-description.modal';
 import { Provider } from 'react-redux';
 import store from './src/store/store'
 
@@ -22,7 +23,8 @@ const App: any = () => {
         {/* <ProfileEditBasicInfoModal /> */}
         {/* <ProfileVerifyPhotoModal /> */}
         {/* <ProfileRemoveIdentvideoModal /> */}
-        <ProfileEditPhotoModal />
+        {/* <ProfileEditPhotoModal /> */}
+        <ProfileEditDescriptionModal />
     </SafeAreaView>
     </Provider>
   )

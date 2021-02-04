@@ -32,7 +32,8 @@ const ProfileEditBasicInfoModal = () => {
                   icon={<Icon name={'gender-other-off'} size={16} />} />
               </View>
             </View>
-            <View style={{marginTop: 30}}>
+            <View style={s.warning}>
+              <Icon name={'warning'} size={20}/>
               <Text style={[s.subText, s.gray]}>{'Please not. You have to be verified again after changing your personal info'}</Text>
             </View>
             <View style={s.buttons}>
