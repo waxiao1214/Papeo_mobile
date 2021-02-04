@@ -9,8 +9,8 @@ import BookMarkStarOffIcon from '../assets/icons/bookmarkStarIcon_off.svg';
 import BookMarkStarOnIcon from '../assets/icons/bookmarkStarIcon_on.svg';
 import CallendarIcon from '../assets/icons/callendarIcon.svg';
 import CameraRecordIcon from '../assets/icons/cameraBtnIcon_recording.svg';
-import CameraIcon from '../assets/icons/cameraBtnIcon.svg';
-import CameraFrontIcon from '../assets/icons/cameraIcon_frontView.svg';
+import CameraIcon from '../../assets/icons/cameraBtnIcon.svg';
+import CameraFrontIcon from '../../assets/icons/cameraIcon_frontView.svg';
 import CameraSideView from '../assets/icons/cameraIcon_sideView.svg';
 import ChatIcon from '../assets/icons/chatIcon.svg';
 import CheckBoxOffIcon from '../assets/icons/checkboxIcon_off.svg';
@@ -31,7 +31,7 @@ import EditIcon from '../assets/icons/editIcon.svg';
 import FollowerIcon from '../assets/icons/followerIcon.svg';
 import FollowingIcon from '../assets/icons/followingIcon.svg';
 import FreeIcon from '../assets/icons/freeIcon.svg';
-import GalleryIcon from '../assets/icons/galleryIcon.svg';
+import GalleryIcon from '../../assets/icons/galleryIcon.svg';
 import FemaleOffIcon from '../../assets/icons/genderIcon_female_off.svg';
 import FemaleOnIcon from '../../assets/icons/genderIcon_female_on.svg';
 import ManOffIcon from '../../assets/icons/genderIcon_male_off.svg';
@@ -78,6 +78,7 @@ import TimeIcon from '../assets/icons/timeIcon.svg';
 import UploadImageIcon from '../assets/icons/uploadImg_icon.svg';
 import VerifiedIcon from '../assets/icons/verifiedIcon.svg';
 import VideoPlayIcon from '../assets/icons/videoPlayIcon.svg';
+import Warning from '../../assets/icons/warning_on.svg';
 
 const DEFAULT_ICON_SIZE = 24;
 
@@ -105,7 +106,15 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
       return <OtherOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
     case 'gender-other-on':
       return <OtherOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
-    default:
+    case 'camera':
+      return <CameraIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'camera-front':
+      return <CameraFrontIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'gallery':
+      return <GalleryIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+      case 'warning':
+        return <Warning width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+      default:
       return null 
   }
 };

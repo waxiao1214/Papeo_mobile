@@ -14,9 +14,13 @@ interface ButtonProps {
   size?:string
 }
 
+
+
 const CustomButton = (props: ButtonProps) => {
   const { title, icon, style, color, onPress, bgColor, borderColor, size } = props;
-
+  let SIZE = 46  
+  if(size === 'small') SIZE = 36;
+  if(size === 'large') SIZE = 55
   return (
     <TouchableOpacity
       style={{
@@ -24,18 +28,18 @@ const CustomButton = (props: ButtonProps) => {
         backgroundColor: bgColor,
         display: 'flex',
         flexDirection: 'row',
-        height: size === 'small' ? 36 : 46,
+        alignItems: 'center',
+        height: SIZE,
         justifyContent: 'center',
         borderColor: borderColor || Colors.$primary,
       }}
       onPress={() => onPress()}>
-      <View style={{ marginTop: 8 }}>{icon}</View>
+      <View>{icon}</View>
       <Text
         style={{
           color: color,
           fontSize: 18,
-          marginTop: size === 'small' ? 6 : 8,
-          marginLeft: 8,
+          marginLeft: 12,
         }}>
         {title}
       </Text>

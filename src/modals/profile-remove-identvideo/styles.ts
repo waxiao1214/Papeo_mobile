@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native'
-import { floor } from 'react-native-reanimated'
 
 export default StyleSheet.create({
   buttons: {
