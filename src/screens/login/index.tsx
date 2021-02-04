@@ -73,9 +73,9 @@ const Login = () => {
   };
   return (
     <ImageBackground source={BACK_IMAGE} style={{ flex: 1, height: screenHeight }}>
-      <View style={[ s.container, {height: screenHeight} ]}>
+      <View style={[s.container, { height: screenHeight }]}>
         <SafeAreaView style={{ flex: 1 }}>
-          <PageInfo title={title} description={description}/>
+          <PageInfo title={title} description={description} />
           <View style={{ height: 250 }}>{renderBody()}</View>
           <PageBottom />
         </SafeAreaView>

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { View, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/core';
-import { showLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.action';
+import { showLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.actions';
 import { useDispatch } from 'react-redux';
 
 const HomeExampleNavigation: FC = () => {

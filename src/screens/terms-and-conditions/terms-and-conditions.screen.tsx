@@ -7,10 +7,7 @@ import Container from '../../components/design/container/container';
 const TermsAndConditions: FC = () => {
   return (
     <Background>
-      <TopBar 
-        title={`Papeo General Terms and\nconditions`}
-        date='from 14.12 2020'
-      />
+      <TopBar title={'Papeo General Terms and\nconditions'} date="from 14.12 2020" />
       <Container padding marginTop>
         <TermList />
       </Container>

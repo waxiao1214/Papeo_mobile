@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Modal, Text, Animated } from 'react-native';
 import Button from '../../components/Button';
 import { useSelector, useDispatch } from 'react-redux';
-import { hideLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.action';
+import { hideLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.actions';
 import s from './styles';
 import Colors from '../../styles/colors/colors';
 

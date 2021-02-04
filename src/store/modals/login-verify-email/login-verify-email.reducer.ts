@@ -1,10 +1,10 @@
 import {
   SHOW_LOGIN_VERIFY_EMAIL_MODAL,
   HIDE_LOGIN_VERIFY_EMAIL_MODAL,
-} from './login-verify-email.type';
+} from './login-verify-email.types';
 import initialState from './login-verify-email.state';
 
-const LoginVerifyEmailModalReducer = (state = initialState, action: any) => {
+const loginVerifyEmailModalReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case SHOW_LOGIN_VERIFY_EMAIL_MODAL:
       return {
@@ -24,4 +24,4 @@ const LoginVerifyEmailModalReducer = (state = initialState, action: any) => {
   }
 };
 
-export default LoginVerifyEmailModalReducer;
+export default loginVerifyEmailModalReducer;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, SafeAreaView } from 'react-native';
 import AppNavigation from './src/navigation/app-navigation';
 import LoginVerifyEmailModal from './src/modals/login-verify-email/login-verify-email.modal';
 import PartyJoinRequested from './src/modals/party-join-requested/party-join-requested.modal';
@@ -11,13 +10,14 @@ import ProfileEditPhotoModal from './src/modals/profile-edit-photo/profile-edit-
 import ProfileEditDescriptionModal from './src/modals/profile-edit-description/profile-edit-description.modal';
 import ProfileIdentivideoUploadedModal from './src/modals/profile-identvideo-uploaded/profile-identivideo-uploaded.modal';
 import { Provider } from 'react-redux';
-import store from './src/store/store'
+import store from './src/store/store';
+import { SafeAreaView } from 'react-native';
 
 const App: any = () => {
   return (
     <Provider store={store}>
-    <SafeAreaView style={{  width: '100%', height: '100%', }}>
-      <AppNavigation />
+      <SafeAreaView>
+        <AppNavigation />
         {/* <LoginVerifyEmailModal /> */}
         {/* <PartyJoinRequested /> */}
         {/* <ProfileEditLocation /> */}
@@ -27,7 +27,7 @@ const App: any = () => {
         {/* <ProfileEditPhotoModal /> */}
         {/* <ProfileEditDescriptionModal /> */}
         <ProfileIdentivideoUploadedModal />
-    </SafeAreaView>
+      </SafeAreaView>
     </Provider>
   )
 };
