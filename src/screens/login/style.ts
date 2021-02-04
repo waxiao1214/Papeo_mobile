@@ -10,11 +10,11 @@ const LoginScreenStyle = StyleSheet.create({
   },
   header: {
     marginTop: 80,
-    height: 145, 
-    overflow: 'hidden'
+    height: 145,
+    overflow: 'hidden',
   },
   center: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   bold: {
     fontWeight: '700',

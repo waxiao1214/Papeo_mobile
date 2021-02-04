@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Modal, Text, Animated, Button } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-import { hideLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.action';
+import { hideLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.actions';
 import s from './styles';
 
 const LoginVerifyEmailModal = () => {

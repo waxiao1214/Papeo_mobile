@@ -22,6 +22,6 @@ export default StyleSheet.create({
   },
   date: {
     color: '#585b64',
-    marginLeft: 56
-  }
+    marginLeft: 56,
+  },
 });
