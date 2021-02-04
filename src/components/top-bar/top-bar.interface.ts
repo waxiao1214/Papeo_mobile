@@ -1,6 +1,7 @@
 export default interface TopBarProps {
-  onBack?: any;
-  onClose?: any;
-  title?:string
-  date?:string
+  onBack?: (step: number) => void;
+  onClose?: () => void;
+  step?: number;
+  title?: string;
+  date?: string;
 }
