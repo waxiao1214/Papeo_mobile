@@ -40,6 +40,7 @@ const CustomButton = (props: ButtonProps) => {
           color: color,
           fontSize: 18,
           marginLeft: 12,
+          fontWeight: '600'
         }}>
         {title}
       </Text>

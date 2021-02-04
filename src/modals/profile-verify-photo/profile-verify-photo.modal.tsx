@@ -6,7 +6,7 @@ import ModalHeader from '../components/modal-header/modal-header';
 import s from './styles';
 import gs from '../styles';
 const screenWidth = Dimensions.get('window').width;
-const IMAGE = require('../../assets/img/verify-profile.png');
+const IMAGE = require('../../assets/img/verify.png');
 
 const ProfileVerifyPhotoModal = () => {
   const [bgFadeAnimation] = useState(new Animated.Value(0));

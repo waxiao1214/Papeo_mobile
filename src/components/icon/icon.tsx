@@ -76,7 +76,7 @@ import StarOffIcon from '../assets/icons/starIcon_off.svg';
 import GuyIcon from '../assets/icons/svgGuy.svg';
 import TimeIcon from '../assets/icons/timeIcon.svg';
 import UploadImageIcon from '../assets/icons/uploadImg_icon.svg';
-import VerifiedIcon from '../assets/icons/verifiedIcon.svg';
+import VerifiedIcon from '../../assets/icons/verifiedIcon.svg';
 import VideoPlayIcon from '../assets/icons/videoPlayIcon.svg';
 import Warning from '../../assets/icons/warning_on.svg';
 
@@ -112,9 +112,11 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
       return <CameraFrontIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
     case 'gallery':
       return <GalleryIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
-      case 'warning':
-        return <Warning width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
-      default:
+    case 'warning':
+      return <Warning width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'verify':
+      return <VerifiedIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    default:
       return null 
   }
 };
