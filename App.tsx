@@ -16,7 +16,7 @@ import { SafeAreaView } from 'react-native';
 const App: any = () => {
   return (
     <Provider store={store}>
-      <SafeAreaView>
+      <SafeAreaView style={{flex: 1}}>
         <AppNavigation />
         {/* <LoginVerifyEmailModal /> */}
         {/* <PartyJoinRequested /> */}
@@ -26,7 +26,7 @@ const App: any = () => {
         {/* <ProfileRemoveIdentvideoModal /> */}
         {/* <ProfileEditPhotoModal /> */}
         {/* <ProfileEditDescriptionModal /> */}
-        <ProfileIdentivideoUploadedModal />
+        {/* <ProfileIdentivideoUploadedModal /> */}
       </SafeAreaView>
     </Provider>
   )

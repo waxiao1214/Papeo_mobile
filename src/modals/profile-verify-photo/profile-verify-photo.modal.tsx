@@ -12,7 +12,7 @@ const ProfileVerifyPhotoModal = () => {
   const [bgFadeAnimation] = useState(new Animated.Value(0));
   return (
     <Animated.View style={[gs.animate, { opacity: bgFadeAnimation} ]} >
-      <Modal animationType='slide' transparent={true} visible={true} >
+      <Modal animationType='slide' transparent={true} visible={false} >
         <View style={[gs.centeredView]}>
           <View style={[gs.modalView]}>
             <ModalHeader title='Verify Your profile' onClose={() => {}}/>
