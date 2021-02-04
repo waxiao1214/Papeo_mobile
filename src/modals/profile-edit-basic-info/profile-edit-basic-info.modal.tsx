@@ -6,7 +6,7 @@ import Colors from '../../styles/colors/colors';
 import ModalHeader from '../components/modal-header/modal-header'
 import s from './styles';
 
-const ProfileEditBasicInfo = () => {
+const ProfileEditBasicInfoModal = () => {
   const [bgFadeAnimation] = useState(new Animated.Value(0));
 
   return (
@@ -51,4 +51,4 @@ const ProfileEditBasicInfo = () => {
   )
 }
 
-export default ProfileEditBasicInfo;
+export default ProfileEditBasicInfoModal;

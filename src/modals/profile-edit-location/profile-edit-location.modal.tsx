@@ -9,7 +9,7 @@ import s from './styles';
 
 const MAP = require('../../assets/img/map.png')
 
-const ProfileEditLocation = () => {
+const ProfileEditLocationModal = () => {
   const [bgFadeAnimation] = useState(new Animated.Value(0));
 
   return (
@@ -21,10 +21,12 @@ const ProfileEditLocation = () => {
       >
         <View style={[s.centeredView]}>
           <View style={s.modalView}>
-            <ModalHeader title='Change Address'/>
-            <Text style={[s.nameTitle, s.gray]}>Your Name</Text>
-            <Text style={[s.name, s.white]}>Meissnerstr. 3, Köln, Germany </Text>
-            <View>
+            <View style={{paddingLeft: 15, paddingRight: 15}}>
+              <ModalHeader title='Change Address'/>
+              <Text style={[s.nameTitle, s.gray]}>Your Name</Text>
+              <Text style={[s.name, s.white]}>Meissnerstr. 3, Köln, Germany </Text>
+            </View>
+            <View style={{width: '100%'}}>
               <Image source={MAP} style={s.mapview}/>
               {/* connect google map */}
               {/* <MapView
@@ -51,4 +53,4 @@ const ProfileEditLocation = () => {
   )
 }
 
-export default ProfileEditLocation;
+export default ProfileEditLocationModal;

@@ -4,9 +4,9 @@ import Button from '../../components/Button';
 import Colors from '../../styles/colors/colors';
 import ModalHeader from '../components/modal-header/modal-header'
 import s from './styles';
-
+import gs from '../styles';
 const IMAGE = require('../../assets/img/bg.png')
-const PartyJoinRequested = () => {
+const PartyJoinRequestedModal = () => {
   const [bgFadeAnimation] = useState(new Animated.Value(0));
 
   return (
@@ -26,8 +26,8 @@ const PartyJoinRequested = () => {
         transparent={true}
         visible={true}
       >
-        <View style={[s.centeredView]}>
-          <View style={s.modalView}>
+        <View style={[gs.centeredView]}>
+          <View style={gs.modalView}>
             <ModalHeader title='Join Party' onClose={() => {}}/>
             <Text style={[s.title, s.white]}>Your request to join</Text>
             <Image style ={s.image} source={IMAGE}/>
@@ -46,4 +46,4 @@ const PartyJoinRequested = () => {
   )
 }
 
-export default PartyJoinRequested;
+export default PartyJoinRequestedModal;

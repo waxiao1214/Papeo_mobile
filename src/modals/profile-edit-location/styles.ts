@@ -17,8 +17,6 @@ export default StyleSheet.create({
     margin: 20,
     marginTop: 15,
     marginBottom: 45,
-    paddingLeft: 15,
-    paddingRight: 15,
     paddingTop: 20,
     paddingBottom: 40,
     backgroundColor: '#25233D',
@@ -31,6 +29,13 @@ export default StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+  },
+  mapview: {
+    marginLeft: 0,
+    marginRight: 0,
+    width: '100%',
+    height: 340,
+    marginTop: 24
   },
   image: {
     width: 75,
@@ -62,17 +67,12 @@ export default StyleSheet.create({
   gray: {
     color: '#585b64',
   },
-  mapview: {
-    marginLeft: -15,
-    height: 340,
-    width: 373,
-    backgroundColor: 'green',
-    marginTop: 24
-  },
   buttons: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 30
+    marginTop: 30,
+    paddingLeft: 15,
+    paddingRight: 15
   },
   cancelButton: {
     textAlign: 'center'

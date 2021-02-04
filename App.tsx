@@ -4,7 +4,8 @@ import AppNavigation from './src/navigation/app-navigation';
 import LoginVerifyEmailModal from './src/modals/login-verify-email/login-verify-email.modal';
 import PartyJoinRequested from './src/modals/party-join-requested/party-join-requested.modal';
 import ProfileEditLocation from './src/modals/profile-edit-location/profile-edit-location.modal';
-import ProfileEditBasicInfo from './src/modals/profile-edit-basic-info/profile-edit-basic-info.modal';
+import ProfileEditBasicInfoModal from './src/modals/profile-edit-basic-info/profile-edit-basic-info.modal';
+import ProfileVerifyPhotoModal from './src/modals/profile-verify-photo/profile-verify-photo.modal';
 import { Provider } from 'react-redux';
 import store from './src/store/store'
 
@@ -17,7 +18,8 @@ const App: any = () => {
         {/* <LoginVerifyEmailModal /> */}
         {/* <PartyJoinRequested /> */}
         {/* <ProfileEditLocation /> */}
-        <ProfileEditBasicInfo />
+        {/* <ProfileEditBasicInfoModal /> */}
+        <ProfileVerifyPhotoModal />
     </SafeAreaView>
     </Provider>
   )
