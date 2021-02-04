@@ -9,6 +9,7 @@ import CreatePartyDateWidget from '../../widgets/create-party-date/create-party-
 import CreatePartyGuestInfoWidget from '../../widgets/create-party-guest-info/create-party-guest-info.widget';
 import CreatePartyPaymentsWidget from '../../widgets/create-party-payments/create-party-payments.widget';
 import CreatePartyGuestLimitWidget from '../../widgets/create-party-guest-limit/create-party-guest-limit.widget';
+import CreatePartyMediaWidget from '../../widgets/create-party-media/create-party-media.widget';
 
 const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
   switch (step) {
@@ -30,6 +31,8 @@ const RenderWidgets: React.FC<RenderWidgetsProps> = ({ step }) => {
       return <CreatePartyPaymentsWidget />;
     case 9:
       return <CreatePartyGuestLimitWidget />;
+    case 10:
+      return <CreatePartyMediaWidget />;
     default:
       return null;
   }

@@ -10,7 +10,7 @@ import BookMarkStarOnIcon from '../assets/icons/bookmarkStarIcon_on.svg';
 import CallendarIcon from '../assets/icons/callendarIcon.svg';
 import CameraRecordIcon from '../assets/icons/cameraBtnIcon_recording.svg';
 import CameraIcon from '../assets/icons/cameraBtnIcon.svg';
-import CameraFrontIcon from '../assets/icons/cameraIcon_frontView.svg';
+import CameraFrontIcon from '../../assets/icons/cameraIcon_frontView.svg';
 import CameraSideView from '../assets/icons/cameraIcon_sideView.svg';
 import ChatIcon from '../assets/icons/chatIcon.svg';
 import CheckBoxOffIcon from '../assets/icons/checkboxIcon_off.svg';
@@ -75,7 +75,7 @@ import StarOnIcon from '../assets/icons/starIcon_on.svg';
 import StarOffIcon from '../assets/icons/starIcon_off.svg';
 import GuyIcon from '../../assets/icons/svgGuy.svg';
 import TimeIcon from '../assets/icons/timeIcon.svg';
-import UploadImageIcon from '../assets/icons/uploadImg_icon.svg';
+import UploadImageIcon from '../../assets/icons/uploadImg_icon.svg';
 import VerifiedIcon from '../assets/icons/verifiedIcon.svg';
 import VideoPlayIcon from '../assets/icons/videoPlayIcon.svg';
 
@@ -167,6 +167,22 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
     case 'guy':
       return (
         <GuyIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'camera':
+      return (
+        <CameraFrontIcon
+          width={size || DEFAULT_ICON_SIZE}
+          height={size || DEFAULT_ICON_SIZE}
+          color={color || DEFAULT__ICON_COLOR}
+        />
+      );
+    case 'upload':
+      return (
+        <UploadImageIcon
           width={size || DEFAULT_ICON_SIZE}
           height={size || DEFAULT_ICON_SIZE}
           color={color || DEFAULT__ICON_COLOR}
