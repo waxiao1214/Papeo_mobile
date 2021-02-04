@@ -3,4 +3,5 @@ export default interface TopBarProps {
   onClose?: any;
   title?: string;
   date?: string;
+  step?: number;
 }

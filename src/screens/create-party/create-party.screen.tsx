@@ -28,10 +28,11 @@ const CreatePartyScreen: React.FC = () => {
 
   return (
     <Background>
-      <TopBar onBack={goBack} title="Create Party" />
+      <StatusBar barStyle={'light-content'} />
+      <TopBar onBack={goBack} title="Create Party" step={step} />
       <ProgressBar step={step} />
       <RenderWidgets step={step} />
-      <NextButton step={step} onPress={goNext} />
+      {step !== 10 && <NextButton step={step} onPress={goNext} />}
     </Background>
   );
 };
