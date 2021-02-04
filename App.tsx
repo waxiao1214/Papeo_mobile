@@ -6,6 +6,7 @@ import PartyJoinRequested from './src/modals/party-join-requested/party-join-req
 import ProfileEditLocation from './src/modals/profile-edit-location/profile-edit-location.modal';
 import ProfileEditBasicInfoModal from './src/modals/profile-edit-basic-info/profile-edit-basic-info.modal';
 import ProfileVerifyPhotoModal from './src/modals/profile-verify-photo/profile-verify-photo.modal';
+import ProfileRemoveIdentvideoModal from './src/modals/profile-remove-identvideo/profile-remove-identvideo.modal';
 import { Provider } from 'react-redux';
 import store from './src/store/store'
 
@@ -19,7 +20,8 @@ const App: any = () => {
         {/* <PartyJoinRequested /> */}
         {/* <ProfileEditLocation /> */}
         {/* <ProfileEditBasicInfoModal /> */}
-        <ProfileVerifyPhotoModal />
+        {/* <ProfileVerifyPhotoModal /> */}
+        <ProfileRemoveIdentvideoModal />
     </SafeAreaView>
     </Provider>
   )
