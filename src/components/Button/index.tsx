@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Button } from 'react-native';
 import Colors from '../../styles/colors/colors';
-import styles from '../../styles/components/button.style';
+import styles from './button.style';
 
 interface ButtonProps {
   title: string;
@@ -10,11 +10,12 @@ interface ButtonProps {
   style?: object;
   color?: string;
   onPress?: Function;
-  borderColor?:string
+  borderColor?:string,
+  size?:string
 }
 
 const CustomButton = (props: ButtonProps) => {
-  const { title, icon, style, color, onPress, bgColor, borderColor } = props;
+  const { title, icon, style, color, onPress, bgColor, borderColor, size } = props;
 
   return (
     <TouchableOpacity
@@ -23,6 +24,7 @@ const CustomButton = (props: ButtonProps) => {
         backgroundColor: bgColor,
         display: 'flex',
         flexDirection: 'row',
+        height: size === 'small' ? 36 : 46,
         justifyContent: 'center',
         borderColor: borderColor || Colors.$primary,
       }}
@@ -32,7 +34,7 @@ const CustomButton = (props: ButtonProps) => {
         style={{
           color: color,
           fontSize: 18,
-          marginTop: 8,
+          marginTop: size === 'small' ? 6 : 8,
           marginLeft: 8,
         }}>
         {title}

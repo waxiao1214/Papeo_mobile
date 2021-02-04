@@ -32,12 +32,12 @@ import FollowerIcon from '../assets/icons/followerIcon.svg';
 import FollowingIcon from '../assets/icons/followingIcon.svg';
 import FreeIcon from '../assets/icons/freeIcon.svg';
 import GalleryIcon from '../assets/icons/galleryIcon.svg';
-import FemaleOffIcon from '../assets/icons/genderIcon_female_off.svg';
-import FemaleOnIcon from '../assets/icons/genderIcon_female_on.svg';
-import ManOffIcon from '../assets/icons/genderIcon_male_off.svg';
-import ManOnIcon from '../assets/icons/genderIcon_male_on.svg';
-import OtherOffIcon from '../assets/icons/genderIcon_other_off.svg';
-import OtherOnIcon from '../assets/icons/genderIcon_other_on.svg';
+import FemaleOffIcon from '../../assets/icons/genderIcon_female_off.svg';
+import FemaleOnIcon from '../../assets/icons/genderIcon_female_on.svg';
+import ManOffIcon from '../../assets/icons/genderIcon_male_off.svg';
+import ManOnIcon from '../../assets/icons/genderIcon_male_on.svg';
+import OtherOffIcon from '../../assets/icons/genderIcon_other_off.svg';
+import OtherOnIcon from '../../assets/icons/genderIcon_other_on.svg';
 import GlassesOffIcon from '../assets/icons/glassesIcon_off.svg';
 import GlassesOnIcon from '../assets/icons/glassesIcon_on.svg';
 import GlassesWhiteIcon from '../assets/icons/glassesWhiteIcon.svg';
@@ -81,7 +81,7 @@ import VideoPlayIcon from '../assets/icons/videoPlayIcon.svg';
 
 const DEFAULT_ICON_SIZE = 24;
 
-const Icon: React.FC<IconProps> = ({ name, size }) => {
+const Icon: React.FC<IconProps> = ({ name, size, color }) => {
   switch (name) {
     case 'activity':
       return <ActivityIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
@@ -93,8 +93,20 @@ const Icon: React.FC<IconProps> = ({ name, size }) => {
       );
     case 'close':
       return <CloseIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'male-on':
+      return <ManOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} color='#00ff00' />;
+    case 'male-off':
+      return <ManOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'female-on':
+      return <FemaleOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'female-off':
+      return <FemaleOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'gender-other-off':
+      return <OtherOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'gender-other-on':
+      return <OtherOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
     default:
-      return null;
+      return null 
   }
 };
 

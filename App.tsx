@@ -3,7 +3,8 @@ import { View, SafeAreaView } from 'react-native';
 import AppNavigation from './src/navigation/app-navigation';
 import LoginVerifyEmailModal from './src/modals/login-verify-email/login-verify-email.modal';
 import PartyJoinRequested from './src/modals/party-join-requested/party-join-requested.modal';
-import ProfileEditLocation from './src/modals/profile-edit-location.modal/profile-edit-location.modal';
+import ProfileEditLocation from './src/modals/profile-edit-location/profile-edit-location.modal';
+import ProfileEditBasicInfo from './src/modals/profile-edit-basic-info/profile-edit-basic-info.modal';
 import { Provider } from 'react-redux';
 import store from './src/store/store'
 
@@ -15,7 +16,8 @@ const App: any = () => {
       <AppNavigation />
         {/* <LoginVerifyEmailModal /> */}
         {/* <PartyJoinRequested /> */}
-        <ProfileEditLocation />
+        {/* <ProfileEditLocation /> */}
+        <ProfileEditBasicInfo />
     </SafeAreaView>
     </Provider>
   )
