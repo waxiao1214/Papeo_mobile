@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { View, Image, Modal, Text, Animated } from 'react-native';
 // import MapView from 'react-native-maps';
+import ModalHeader from '../components/modal-header/modal-header';
 import Button from '../../components/Button';
 import Colors from '../../styles/colors/colors';
 import Icon from '../../components/icon/icon';
@@ -20,10 +21,7 @@ const ProfileEditLocation = () => {
       >
         <View style={[s.centeredView]}>
           <View style={s.modalView}>
-            <View style={s.header}>
-              <Text style={[s.heaterTitle, s.white]}>Change Address</Text>
-              <Icon name={'close'} size={14} />
-            </View>
+            <ModalHeader title='Change Address'/>
             <Text style={[s.nameTitle, s.gray]}>Your Name</Text>
             <Text style={[s.name, s.white]}>Meissnerstr. 3, Köln, Germany </Text>
             <View>

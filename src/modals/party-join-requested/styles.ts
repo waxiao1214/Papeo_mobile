@@ -33,18 +33,8 @@ export default StyleSheet.create({
     borderRadius: 20,
     marginTop: 13
   },
-  header: {
-    display: 'flex',
-    flexDirection: 'row',
-  },
   white: {
     color: '#fff'
-  },
-  heaterTitle: {
-    flex: 1,
-    fontSize: 20,
-    lineHeight: 24,
-    fontWeight: '600'
   },
   title: {
     marginTop: 45,

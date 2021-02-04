@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { View, Image, Modal, Text, Animated, TouchableOpacity } from 'react-native';
 import Button from '../../components/Button';
 import Colors from '../../styles/colors/colors';
-import Icon from '../../components/icon/icon';
+import ModalHeader from '../components/modal-header/modal-header'
 import s from './styles';
 
 const IMAGE = require('../../assets/img/bg.png')
@@ -28,12 +28,7 @@ const PartyJoinRequested = () => {
       >
         <View style={[s.centeredView]}>
           <View style={s.modalView}>
-            <View style={s.header}>
-              <Text style={[s.heaterTitle, s.white]}>Join Party</Text>
-              <TouchableOpacity onPress={() => {}}>
-                <Icon name={'close'} size={14} />
-              </TouchableOpacity>              
-            </View>
+            <ModalHeader title='Join Party' onClose={() => {}}/>
             <Text style={[s.title, s.white]}>Your request to join</Text>
             <Image style ={s.image} source={IMAGE}/>
             <Text style={[s.subTitle, s.white]}>New Year Anti-COVID Party</Text>
