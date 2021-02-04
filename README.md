@@ -1,45 +1,77 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Papeo
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+This is a social network app which user can share their party across the world. This app was buit with React Native framework.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Get started
+We guess you have a basic knowledgement and environment for react native framework on your side. If you haven't, please check [here](https://reactnative.dev/docs/getting-started).
 
----
+1. Clone repository
+   > git clone https://devcocup@bitbucket.org/juglsoft/mobile-app.git
 
-## Edit a file
+2. Install npm package and pods
+   > cd mobile-app && yarn && npx pod-install
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+3. Run project via terminal or xcode
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
-
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## Project structure
+```
+src
+├── assets
+│   ├── fonts -> custom fonts
+│   ├── icons -> icons as svg file
+│   └── img   -> images
+├── components -> global components
+│   ├── icon
+│   │   ├── icon.interface.ts -> props of component  
+│   │   └── icon.tsx -> declare component  
+│   └── ...
+├── constant -> constant
+│   ├── login
+│   │   └── data.ts -> declare constant for login
+│   └── ...
+├── helpers -> declare the global functionalities
+│   └── utils.ts
+├── modals
+│   ├── login-verify-email -> name of modal
+│   │   ├── login-verify-email.modal.ts -> define the modal
+│   │   └── styles.ts -> styles for modal  
+│   └── ...
+├── navigation -> navigation of app
+│   ├── auth.navigation.tsx
+│   ├── party.navigation.tsx
+│   ├── app.navigation.tsx
+│   └── ...
+├── screens -> pages of app
+│   ├── create-party
+│   │   ├── components
+│   │   │   ├── next-button
+│   │   │   │   ├── next-button.interface.tsx
+│   │   │   │   ├── next-button.tsx
+│   │   │   │   └── styles.ts
+│   │   │   └── ...
+│   │   ├── widgets
+│   │   │   ├── create-party-date
+│   │   │   │   ├── components
+│   │   │   │   ├── create-party-date.widget.tsx
+│   │   │   │   └── styles.ts
+│   │   │   └── ...
+│   │   ├── create-party.screen.tsx
+│   │   └── styles.ts
+│   └── ...
+├── store
+│   └── auth
+│   │   ├── auth.types.ts
+│   │   ├── auth.reducer.ts
+│   │   ├── auth.actions.ts
+│   │   ├── auth.operations.ts
+│   │   ├── auth.selectors.ts
+│   │   └── auth.ts
+│   └── ...
+└── styles
+    ├── colors
+    │   ├── colors.interface.ts
+    │   └── colors.ts
+    └── fonts
+        ├── fonts.interface.ts
+        └── fonts.ts
+```
