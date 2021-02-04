@@ -1,6 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  animate: {
+    position: 'absolute',
+    backgroundColor: 'red',
+    width: '100%',
+    height: '100%',
+  },
   centeredView: {
     flex: 1,
     justifyContent: 'center',
@@ -9,10 +15,10 @@ export default StyleSheet.create({
 
   modalView: {
     margin: 20,
-    marginTop: 20,
+    marginTop: 15,
     marginBottom: 45,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingLeft: 15,
+    paddingRight: 15,
     paddingTop: 20,
     paddingBottom: 40,
     backgroundColor: '#25233D',
@@ -46,18 +52,29 @@ export default StyleSheet.create({
     lineHeight: 24,
     fontWeight: '600'
   },
-  title: {
-    marginTop: 45,
-    textAlign: 'center'
-  },
-  subTitle: {
+  name: {
     fontSize: 20,
-    textAlign: 'center',
-    marginTop: 13
+    marginTop: 8
   },
-  subText: {
-    textAlign: 'center',
-    marginTop: 13,
-    marginBottom: 22
+  nameTitle: {
+    marginTop: 18,
+  },
+  gray: {
+    color: '#585b64',
+  },
+  mapview: {
+    marginLeft: -15,
+    height: 340,
+    width: 373,
+    backgroundColor: 'green',
+    marginTop: 24
+  },
+  buttons: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 30
+  },
+  cancelButton: {
+    textAlign: 'center'
   }
 })

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { View, Image, Modal, Text, Animated } from 'react-native';
+import { View, Image, Modal, Text, Animated, TouchableOpacity } from 'react-native';
 import Button from '../../components/Button';
 import Colors from '../../styles/colors/colors';
 import Icon from '../../components/icon/icon';
@@ -30,7 +30,9 @@ const PartyJoinRequested = () => {
           <View style={s.modalView}>
             <View style={s.header}>
               <Text style={[s.heaterTitle, s.white]}>Join Party</Text>
-              <Icon name={'close'} size={14} />
+              <TouchableOpacity onPress={() => {}}>
+                <Icon name={'close'} size={14} />
+              </TouchableOpacity>              
             </View>
             <Text style={[s.title, s.white]}>Your request to join</Text>
             <Image style ={s.image} source={IMAGE}/>

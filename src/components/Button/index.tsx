@@ -10,10 +10,11 @@ interface ButtonProps {
   style?: object;
   color?: string;
   onPress?: Function;
+  borderColor?:string
 }
 
 const CustomButton = (props: ButtonProps) => {
-  const { title, icon, style, color, onPress, bgColor } = props;
+  const { title, icon, style, color, onPress, bgColor, borderColor } = props;
 
   return (
     <TouchableOpacity
@@ -23,6 +24,7 @@ const CustomButton = (props: ButtonProps) => {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
+        borderColor: borderColor || Colors.$primary,
       }}
       onPress={() => onPress()}>
       <View style={{ marginTop: 8 }}>{icon}</View>
