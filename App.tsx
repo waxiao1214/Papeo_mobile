@@ -18,7 +18,7 @@ const App: any = () => {
     <Provider store={store}>
       <SafeAreaView style={{flex: 1}}>
         <AppNavigation />
-        {/* <LoginVerifyEmailModal /> */}
+        <LoginVerifyEmailModal />
         {/* <PartyJoinRequested /> */}
         {/* <ProfileEditLocation /> */}
         {/* <ProfileEditBasicInfoModal /> */}
