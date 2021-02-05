@@ -7,7 +7,15 @@ const ButtonStyle = StyleSheet.create({
     borderRadius: 5,
     height: 46,
     borderWidth: 1,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
+  title: {
+    fontSize: 18,
+    fontWeight: '600'
+  }
 });
 
 export default ButtonStyle;

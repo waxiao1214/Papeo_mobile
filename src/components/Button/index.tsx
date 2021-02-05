@@ -26,23 +26,12 @@ const CustomButton = (props: ButtonProps) => {
       style={{
         ...styles.container,
         backgroundColor: bgColor,
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
         height: SIZE,
-        justifyContent: 'center',
         borderColor: borderColor || Colors.$primary,
       }}
       onPress={() => onPress()}>
       {icon && <View style={{marginRight: 12}}>{icon}</View>}
-      <Text
-        style={{
-          color: color,
-          fontSize: 18,
-          fontWeight: '600'
-        }}>
-        {title}
-      </Text>
+      <Text style={{ color: color }} > {title} </Text>
     </TouchableOpacity>
   );
 };
