@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
-import { Colors } from '../../styles';
+import { Colors, Fonts } from '../../styles';
 
 export default StyleSheet.create({
   container: {
@@ -12,7 +12,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontFamily: 'SFProDisplay-Bold',
+    ...Fonts.bold,
     fontSize: 24,
     color: 'white',
     // marginTop: -8,
