@@ -11,11 +11,11 @@ const Fonts: FontsInterface = {
   },
   bold: {
     fontFamily: 'SFProDisplay-Bold',
-    fontWeight: 'normal',
+    fontWeight: 'bold',
   },
   boldItalic: {
     fontFamily: 'SF-Pro-Display-BoldItalic',
-    fontWeight: 'normal',
+    fontWeight: 'bold',
   },
   heavy: {
     fontFamily: 'SF-Pro-Display-Heavy',
@@ -42,7 +42,7 @@ const Fonts: FontsInterface = {
     fontWeight: 'normal',
   },
   regular: {
-    fontFamily: 'SF-Pro-Display-Regular',
+    fontFamily: 'SFProDisplay-Regular',
     fontWeight: 'normal',
   },
   regularItalic: {

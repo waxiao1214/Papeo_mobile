@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ImageBackground, Text, View, Dimensions, SafeAreaView } from 'react-native';
+import { ImageBackground, Text, View, Dimensions, SafeAreaView, StatusBar } from 'react-native';
 import s from './style';
 import {
   LOGIN_TITLE,
@@ -72,15 +72,18 @@ const Login = () => {
     }
   };
   return (
-    <ImageBackground source={BACK_IMAGE} style={{ flex: 1, height: screenHeight }}>
-      <View style={[s.container, { height: screenHeight }]}>
-        <SafeAreaView style={{ flex: 1 }}>
-          <PageInfo title={title} description={description} />
-          <View style={{ height: 250 }}>{renderBody()}</View>
-          <PageBottom />
-        </SafeAreaView>
-      </View>
-    </ImageBackground>
+    <>
+      <StatusBar barStyle={'light-content'} />
+      <ImageBackground source={BACK_IMAGE} style={{ flex: 1, height: screenHeight }}>
+        <View style={[s.container, { height: screenHeight }]}>
+          <SafeAreaView style={{ flex: 1 }}>
+            <PageInfo title={title} description={description} />
+            <View style={{ height: 250 }}>{renderBody()}</View>
+            <PageBottom />
+          </SafeAreaView>
+        </View>
+      </ImageBackground>
+    </>
   );
 };
 

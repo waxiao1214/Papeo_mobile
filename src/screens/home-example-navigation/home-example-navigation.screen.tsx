@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { View, Button, Text } from 'react-native';
+import { View, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/core';
 import { showLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.actions';
 import { showPartyJoinRequest } from '../../store/modals/party-join-request/party-join-request.actions';
@@ -12,29 +12,30 @@ import { showProfileRemoveIdentvideo } from '../../store/modals/profile-remove-i
 import { showProfileVerifyPhoto } from '../../store/modals/profile-verify-photo/profile-verify-photo.actions';
 
 import { useDispatch } from 'react-redux';
+import { Colors } from '../../styles';
 
 const HomeExampleNavigation: FC = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: Colors.$partyBackground }}>
       <Button
+      color={'white'}
         title="Terms And Conditions Screen"
-        onPress={() => navigation.replace('TermsConditionsScreen')}
+        onPress={() => navigation.navigate('TermsConditionsScreen')}
       />
-      <Button title="Login Screen" onPress={() => navigation.replace('LoginScreen')} />
-      <Button title="CreatePartyScreen" onPress={() => navigation.replace('CreatePartyScreen')} />
-      <Button title="open verifyModal" onPress={() => dispatch(showLoginVerifyEmail())} />
-      <Button title="Open Party JoinRequestModal" onPress={() => {dispatch(showPartyJoinRequest())}}/>
-      <Button title="Open Profile EditBasicInfoModal" onPress={() => {dispatch(showProfileEditBasicInfo())}}/>
-      <Button title="Open Profile EditDescriptionModal" onPress={() => {dispatch(showProfileEditDescription())}}/>
-      <Button title="Open profile EditLocationModal" onPress={() => {dispatch(showProfileEditLocation())}}/>
-      <Button title="Open profile EditPhotoModal" onPress={() => {dispatch(showProfileEditPhoto())}}/>
-      <Button title="Open profile IdentVideo Uploaded Modal" onPress={() => {dispatch(showProfileIdentvideoUploaded())}}/>
-      <Button title="Open profile Remove IdentVideo Modal" onPress={() => {dispatch(showProfileRemoveIdentvideo())}}/>
+      <Button color={'white'} title="Login Screen" onPress={() => navigation.navigate('LoginScreen')} />
+      <Button color={'white'} title="CreatePartyScreen" onPress={() => navigation.navigate('CreatePartyScreen')} />
+      <Button color={'white'} title="open verifyModal" onPress={() => dispatch(showLoginVerifyEmail())} />
+      <Button color={'white'} title="Open Party JoinRequestModal" onPress={() => {dispatch(showPartyJoinRequest())}}/>
+      <Button color={'white'} title="Open Profile EditBasicInfoModal" onPress={() => {dispatch(showProfileEditBasicInfo())}}/>
+      <Button color={'white'} title="Open Profile EditDescriptionModal" onPress={() => {dispatch(showProfileEditDescription())}}/>
+      <Button color={'white'} title="Open profile EditLocationModal" onPress={() => {dispatch(showProfileEditLocation())}}/>
+      <Button color={'white'} title="Open profile EditPhotoModal" onPress={() => {dispatch(showProfileEditPhoto())}}/>
+      <Button color={'white'} title="Open profile IdentVideo Uploaded Modal" onPress={() => {dispatch(showProfileIdentvideoUploaded())}}/>
+      <Button color={'white'} title="Open profile Remove IdentVideo Modal" onPress={() => {dispatch(showProfileRemoveIdentvideo())}}/>
       <Button title="Open profile Verify Photo Modal" onPress={() => {dispatch(showProfileVerifyPhoto())}}/>
-      
     </View>
   );
 };

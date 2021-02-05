@@ -1,19 +1,19 @@
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../../../styles';
+import { Colors, Fonts } from '../../../../styles';
 
 export default StyleSheet.create({
   container: {
     padding: 24,
   },
   title: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: '700',
     fontSize: 18,
     color: 'white',
     marginBottom: 20,
   },
   input: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: 'bold',
     color: 'white',
     fontSize: 60,

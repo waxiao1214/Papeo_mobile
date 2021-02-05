@@ -5,8 +5,10 @@ import NextButton from './components/next-button/next-button';
 import Background from '../../components/design/background/background';
 import RenderWidgets from './components/render-widgets/render-widgets';
 import { StatusBar } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const CreatePartyScreen: React.FC = () => {
+  const navigation = useNavigation();
   const [step, setStep] = useState(1);
 
   /**
@@ -29,7 +31,9 @@ const CreatePartyScreen: React.FC = () => {
   return (
     <Background>
       <StatusBar barStyle={'light-content'} />
-      <TopBar onBack={goBack} title="Create Party" step={step} />
+      <TopBar onBack={goBack} title="Create Party" step={step} onClose={() => {
+        navigation.goBack();
+      }}/>
       <ProgressBar step={step} />
       <RenderWidgets step={step} />
       {step !== 10 && <NextButton step={step} onPress={goNext} />}
