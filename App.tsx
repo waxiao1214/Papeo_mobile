@@ -21,7 +21,7 @@ const App: any = () => {
         <LoginVerifyEmailModal />
         <PartyJoinRequested />
         {/* <ProfileEditLocation /> */}
-        {/* <ProfileEditBasicInfoModal /> */}
+        <ProfileEditBasicInfoModal />
         {/* <ProfileVerifyPhotoModal /> */}
         {/* <ProfileRemoveIdentvideoModal /> */}
         {/* <ProfileEditPhotoModal /> */}
