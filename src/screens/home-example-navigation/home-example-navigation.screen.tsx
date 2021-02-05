@@ -35,7 +35,7 @@ const HomeExampleNavigation: FC = () => {
       <Button color={'white'} title="Open profile EditPhotoModal" onPress={() => {dispatch(showProfileEditPhoto())}}/>
       <Button color={'white'} title="Open profile IdentVideo Uploaded Modal" onPress={() => {dispatch(showProfileIdentvideoUploaded())}}/>
       <Button color={'white'} title="Open profile Remove IdentVideo Modal" onPress={() => {dispatch(showProfileRemoveIdentvideo())}}/>
-      <Button title="Open profile Verify Photo Modal" onPress={() => {dispatch(showProfileVerifyPhoto())}}/>
+      <Button color={'white'} title="Open profile Verify Photo Modal" onPress={() => {dispatch(showProfileVerifyPhoto())}}/>
     </View>
   );
 };
