@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
+import { Fonts } from '../../../../styles';
 
 export default StyleSheet.create({
   container: {
     padding: 24,
   },
   title: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: '700',
     fontSize: 18,
     color: 'white',
@@ -23,13 +24,13 @@ export default StyleSheet.create({
     marginBottom: 12,
   },
   itemTitle: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: 'bold',
     fontSize: 14,
     marginLeft: 10,
   },
   itemDescription: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontSize: 13,
   },
 });

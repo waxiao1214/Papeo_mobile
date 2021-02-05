@@ -15,7 +15,7 @@ const CreatePartyMediaWidget: FC = () => {
             launchCamera({ mediaType: 'photo' }, () => {});
           }}>
           <View style={s.itemDetail}>
-            <Icon name={'camera'} />
+            <Icon name={'camera-front'} />
             <Text style={s.itemText}>Camera</Text>
           </View>
         </TouchableOpacity>

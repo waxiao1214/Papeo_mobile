@@ -11,23 +11,15 @@ import ProfileEditDescriptionModal from './src/modals/profile-edit-description/p
 import ProfileIdentivideoUploadedModal from './src/modals/profile-identvideo-uploaded/profile-identivideo-uploaded.modal';
 import { Provider } from 'react-redux';
 import store from './src/store/store';
-import { SafeAreaView } from 'react-native';
 
 const App: any = () => {
+  /**
+   * It would be better if we don't wrap the component with safeareaview because we use custom design. We need to calculate the margin/padding for safeareaview manually.
+   */
   return (
     <Provider store={store}>
-      <SafeAreaView style={{flex: 1}}>
         <AppNavigation />
         <LoginVerifyEmailModal />
-        {/* <PartyJoinRequested /> */}
-        {/* <ProfileEditLocation /> */}
-        {/* <ProfileEditBasicInfoModal /> */}
-        {/* <ProfileVerifyPhotoModal /> */}
-        {/* <ProfileRemoveIdentvideoModal /> */}
-        {/* <ProfileEditPhotoModal /> */}
-        {/* <ProfileEditDescriptionModal /> */}
-        {/* <ProfileIdentivideoUploadedModal /> */}
-      </SafeAreaView>
     </Provider>
   )
 };

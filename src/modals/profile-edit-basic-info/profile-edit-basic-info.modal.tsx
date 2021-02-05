@@ -21,7 +21,7 @@ const ProfileEditBasicInfoModal = () => {
             <View style={s.genderView}>
               <View style={{flex:1, marginRight: 8}}>
                 <Button title='Male' size='small' borderColor='#585b64' color='white' 
-                  icon={<Icon name={'male-on'} size={16} />}/>
+                  icon={<Icon name={'male-on'} size={16} color={'#00FF00'} />}/>
               </View>
               <View style={{flex:1, marginLeft: 4, marginRight: 4}}>
                 <Button  title='Female' size='small' borderColor='#585b64'  color='#585b64'

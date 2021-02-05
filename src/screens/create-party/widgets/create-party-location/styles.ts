@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../../../styles';
+import { Colors, Fonts } from '../../../../styles';
 
 export default StyleSheet.create({
   container: {
@@ -13,7 +13,7 @@ export default StyleSheet.create({
     backgroundColor: Colors.$partyBackground,
   },
   title: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: '700',
     fontSize: 18,
     color: 'white',
@@ -23,7 +23,7 @@ export default StyleSheet.create({
     marginBottom: 40,
   },
   input: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontSize: 14,
     color: 'white',
     backgroundColor: 'transparent',

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../../../styles';
+import { Colors, Fonts } from '../../../../styles';
 
 export default StyleSheet.create({
   container: {
@@ -10,26 +10,26 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   title: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: '700',
     fontSize: 18,
     color: 'white',
     marginBottom: 20,
   },
   input: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     color: 'white',
     fontSize: 14,
   },
   deactive: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     color: Colors.$partyDeactive,
   },
   tagContainer: {
     // backgroundColor: 'transparent',
   },
   tagInput: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     color: 'white',
     fontSize: 16,
     backgroundColor: 'transparent',

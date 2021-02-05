@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../../../styles';
+import { Colors, Fonts } from '../../../../styles';
 
 export default StyleSheet.create({
   container: {
@@ -12,7 +12,7 @@ export default StyleSheet.create({
     marginBottom: 20,
   },
   title: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: '700',
     fontSize: 18,
     color: 'white',
@@ -32,7 +32,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   itemText: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontSize: 14,
     color: 'white',
     marginTop: 8,
@@ -41,7 +41,7 @@ export default StyleSheet.create({
     flex: 1,
   },
   mediaText: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontSize: 14,
     color: 'white',
     marginBottom: 20,
@@ -55,7 +55,7 @@ export default StyleSheet.create({
     marginBottom: 20,
   },
   previewText: {
-    fontFamily: 'SFProDisplay-Regular',
+    ...Fonts.regular,
     fontWeight: '600',
     fontSize: 16,
     color: 'white',
