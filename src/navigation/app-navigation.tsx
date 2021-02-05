@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 
 import HomeExampleNavigation from '../screens/home-example-navigation/home-example-navigation.screen';
-import LoginScreen from '../screens/login/index';
+import LoginScreen from '../screens/login/login.screen';
 import TermsConditionsScreen from '../screens/terms-and-conditions/terms-and-conditions.screen';
 import CreatePartyScreen from '../screens/create-party/create-party.screen';
 

@@ -4,7 +4,7 @@ import {
 } from './profile-edit-photo.types';
 import initialState from './profile-edit-photo.state';
 
-const profileEditPhotoReducer = (state = initialState, action: any) => {
+const profileEditPhotoModalReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case SHOW_PROFIL_EDIT_PHOTO_MODAL:
       return {
@@ -24,4 +24,4 @@ const profileEditPhotoReducer = (state = initialState, action: any) => {
   }
 };
 
-export default profileEditPhotoReducer;
+export default profileEditPhotoModalReducer;

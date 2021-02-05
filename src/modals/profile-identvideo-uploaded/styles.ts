@@ -6,7 +6,8 @@ export default StyleSheet.create({
     paddingBottom: 10
   },
   headerImage: {
-    position: 'absolute'
+    position: 'absolute',
+    zIndex: -1
   },
   title: {
     color: 'white',
