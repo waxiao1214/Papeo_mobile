@@ -20,7 +20,8 @@ export default StyleSheet.create({
   },
   headerImage: {
     position: 'absolute',
-    width: '100%'
+    width: '100%',
+    zIndex: -1
   },
   doYourBest: {
     fontSize: 15,

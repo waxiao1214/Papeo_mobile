@@ -9,6 +9,7 @@ import profileEditLocationModalReducer from './modals/profile-edit-location/prof
 import profileEditPhotoModalReducer from './modals/profile-edit-photo/profile-edit-photo.reducer';
 import profileIdentvideoUploadedModalReducer from './modals/profile-identvideo-uploaded/profile-identvideo-uploaded.reducer';
 import profileRemoveIdentvideoModalReducer from './modals/profile-remove-identvideo/profile-remove-identvideo.reducer';
+import profileVerifyPhotoModalReducer from './modals/profile-verify-photo/profile-verify-photo.reducer';
 
 import createPartyFormReducer from './party/create-party-form/create-party-form.reducer';
 
@@ -25,6 +26,7 @@ const store = createStore(
     profileEditPhotoModal: profileEditPhotoModalReducer,
     profileIdentvideoUploadedModal: profileIdentvideoUploadedModalReducer,
     profileRemoveIdentvideoModal: profileRemoveIdentvideoModalReducer,
+    profileVerifyPhotoModal: profileVerifyPhotoModalReducer,
     // party
     createPartyForm: createPartyFormReducer,
   }),

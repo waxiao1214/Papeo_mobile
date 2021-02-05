@@ -9,6 +9,8 @@ import { showProfileEditLocation } from '../../store/modals/profile-edit-locatio
 import { showProfileEditPhoto } from '../../store/modals/profile-edit-photo/profile-edit-photo.actions';
 import { showProfileIdentvideoUploaded } from '../../store/modals/profile-identvideo-uploaded/profile-identvideo-uploaded.actions';
 import { showProfileRemoveIdentvideo } from '../../store/modals/profile-remove-identvideo/profile-remove-identvideo.actions';
+import { showProfileVerifyPhoto } from '../../store/modals/profile-verify-photo/profile-verify-photo.actions';
+
 import { useDispatch } from 'react-redux';
 
 const HomeExampleNavigation: FC = () => {
@@ -31,6 +33,7 @@ const HomeExampleNavigation: FC = () => {
       <Button title="Open profile EditPhotoModal" onPress={() => {dispatch(showProfileEditPhoto())}}/>
       <Button title="Open profile IdentVideo Uploaded Modal" onPress={() => {dispatch(showProfileIdentvideoUploaded())}}/>
       <Button title="Open profile Remove IdentVideo Modal" onPress={() => {dispatch(showProfileRemoveIdentvideo())}}/>
+      <Button title="Open profile Verify Photo Modal" onPress={() => {dispatch(showProfileVerifyPhoto())}}/>
       
     </View>
   );

@@ -34,12 +34,11 @@ const CustomButton = (props: ButtonProps) => {
         borderColor: borderColor || Colors.$primary,
       }}
       onPress={() => onPress()}>
-      <View>{icon}</View>
+      {icon && <View style={{marginRight: 12}}>{icon}</View>}
       <Text
         style={{
           color: color,
           fontSize: 18,
-          marginLeft: 12,
           fontWeight: '600'
         }}>
         {title}

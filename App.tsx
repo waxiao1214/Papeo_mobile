@@ -22,7 +22,7 @@ const App: any = () => {
         <PartyJoinRequested />
         <ProfileEditLocation />
         <ProfileEditBasicInfoModal />
-        {/* <ProfileVerifyPhotoModal /> */}
+        <ProfileVerifyPhotoModal />
         <ProfileRemoveIdentvideoModal />
         <ProfileEditPhotoModal />
         <ProfileEditDescriptionModal />
