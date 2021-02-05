@@ -25,7 +25,7 @@ const App: any = () => {
         {/* <ProfileVerifyPhotoModal /> */}
         {/* <ProfileRemoveIdentvideoModal /> */}
         {/* <ProfileEditPhotoModal /> */}
-        {/* <ProfileEditDescriptionModal /> */}
+        <ProfileEditDescriptionModal />
         {/* <ProfileIdentivideoUploadedModal /> */}
       </SafeAreaView>
     </Provider>
