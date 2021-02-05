@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { View, Button, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/core';
 import { showLoginVerifyEmail } from '../../store/modals/login-verify-email/login-verify-email.actions';
+import { showPartyJoinRequest } from '../../store/modals/party-join-request/party-join-request.actions';
 import { useDispatch } from 'react-redux';
 
 const HomeExampleNavigation: FC = () => {
@@ -17,6 +18,7 @@ const HomeExampleNavigation: FC = () => {
       <Button title="Login Screen" onPress={() => navigation.replace('LoginScreen')} />
       <Button title="CreatePartyScreen" onPress={() => navigation.replace('CreatePartyScreen')} />
       <Button title="open verifyModal" onPress={() => dispatch(showLoginVerifyEmail())} />
+      <Button title="Open PartyJoinRequest" onPress={() => {dispatch(showPartyJoinRequest())}}/>
     </View>
   );
 };

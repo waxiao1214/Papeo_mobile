@@ -19,7 +19,7 @@ const App: any = () => {
       <SafeAreaView style={{flex: 1}}>
         <AppNavigation />
         <LoginVerifyEmailModal />
-        {/* <PartyJoinRequested /> */}
+        <PartyJoinRequested />
         {/* <ProfileEditLocation /> */}
         {/* <ProfileEditBasicInfoModal /> */}
         {/* <ProfileVerifyPhotoModal /> */}
