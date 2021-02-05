@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Button } from 'react-native';
 import Colors from '../../styles/colors/colors';
-import styles from './button.style';
+import s from './button.style';
 
 interface ButtonProps {
   title: string;
@@ -14,8 +14,6 @@ interface ButtonProps {
   size?:string
 }
 
-
-
 const CustomButton = (props: ButtonProps) => {
   const { title, icon, style, color, onPress, bgColor, borderColor, size } = props;
   let SIZE = 46  
@@ -24,13 +22,13 @@ const CustomButton = (props: ButtonProps) => {
   return (
     <TouchableOpacity
       style={{
-        ...styles.container,
+        ...s.container,
         backgroundColor: bgColor,
         height: SIZE,
         borderColor: borderColor || Colors.$primary,
       }}
       onPress={() => onPress()}>
-      {icon && <View style={{marginRight: 12}}>{icon}</View>}
+      {icon && <View style={s.icon}>{icon}</View>}
       <Text style={{ color: color }} > {title} </Text>
     </TouchableOpacity>
   );

@@ -15,6 +15,9 @@ const ButtonStyle = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: '600'
+  },
+  icon: {
+    marginRight: 12
   }
 });
 
