@@ -17,15 +17,19 @@ export default StyleSheet.create({
 
   centeredView: {
     flex: 1,
-    width: 340,
     justifyContent: 'center',
+    backgroundColor: 'rgba(32, 31, 52, 0.8)'
   },
 
   modalView: {
     margin: 20,
     marginTop: 20,
     marginBottom: 45,
-    backgroundColor: '#F7F7FF',
+    paddingLeft: 30,
+    paddingRight: 30,
+    paddingTop: 40,
+    paddingBottom: 40,
+    backgroundColor: '#25233D',
     borderRadius: 20,
     shadowColor: '#000',
     shadowOffset: {
@@ -38,19 +42,17 @@ export default StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'BalooDa2-SemiBold',
     fontWeight: '600',
-    fontSize: 28,
-    lineHeight: 30,
+    fontSize: 20,
+    lineHeight: 24,
     display: 'flex',
     alignItems: 'center',
     textAlign: 'center',
     paddingTop: 10,
-    color: '#4E4640',
+    color: 'white',
   },
 
   subtitle: {
-    fontFamily: 'BalooDa2-SemiBold',
     fontWeight: '600',
     fontSize: 28,
     lineHeight: 30,
@@ -68,19 +70,19 @@ export default StyleSheet.create({
   },
 
   textTitle: {
-    fontFamily: 'BalooDa2-SemiBold',
     fontWeight: '600',
     fontSize: 18,
     color: '#4E4640',
   },
 
   subText: {
-    fontFamily: 'BalooDa2-Medium',
     fontWeight: '500',
     fontSize: 12,
     lineHeight: 18,
-    color: '#747474',
-    marginRight: 25,
+    color: 'white',
+    marginTop: 20,
+    marginBottom: 20,
+    textAlign: 'center'
   },
 
   moreLessButton: {

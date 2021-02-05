@@ -10,7 +10,7 @@ const Fonts: FontsInterface = {
     fontWeight: 'normal',
   },
   bold: {
-    fontFamily: 'SF-Pro-Display-Bold',
+    fontFamily: 'SFProDisplay-Bold',
     fontWeight: 'normal',
   },
   boldItalic: {

@@ -9,7 +9,7 @@ import BookMarkStarOffIcon from '../assets/icons/bookmarkStarIcon_off.svg';
 import BookMarkStarOnIcon from '../assets/icons/bookmarkStarIcon_on.svg';
 import CallendarIcon from '../assets/icons/callendarIcon.svg';
 import CameraRecordIcon from '../assets/icons/cameraBtnIcon_recording.svg';
-import CameraIcon from '../assets/icons/cameraBtnIcon.svg';
+import CameraIcon from '../../assets/icons/cameraBtnIcon.svg';
 import CameraFrontIcon from '../../assets/icons/cameraIcon_frontView.svg';
 import CameraSideView from '../assets/icons/cameraIcon_sideView.svg';
 import ChatIcon from '../assets/icons/chatIcon.svg';
@@ -30,14 +30,14 @@ import DropDowArrowDownIcon from '../assets/icons/dropDownArrowIcon_down.svg';
 import EditIcon from '../assets/icons/editIcon.svg';
 import FollowerIcon from '../assets/icons/followerIcon.svg';
 import FollowingIcon from '../assets/icons/followingIcon.svg';
-import FreeIcon from '../../assets/icons/freeIcon.svg';
-import GalleryIcon from '../assets/icons/galleryIcon.svg';
-import FemaleOffIcon from '../assets/icons/genderIcon_female_off.svg';
-import FemaleOnIcon from '../assets/icons/genderIcon_female_on.svg';
-import ManOffIcon from '../assets/icons/genderIcon_male_off.svg';
-import ManOnIcon from '../assets/icons/genderIcon_male_on.svg';
-import OtherOffIcon from '../assets/icons/genderIcon_other_off.svg';
-import OtherOnIcon from '../assets/icons/genderIcon_other_on.svg';
+import FreeIcon from '../assets/icons/freeIcon.svg';
+import GalleryIcon from '../../assets/icons/galleryIcon.svg';
+import FemaleOffIcon from '../../assets/icons/genderIcon_female_off.svg';
+import FemaleOnIcon from '../../assets/icons/genderIcon_female_on.svg';
+import ManOffIcon from '../../assets/icons/genderIcon_male_off.svg';
+import ManOnIcon from '../../assets/icons/genderIcon_male_on.svg';
+import OtherOffIcon from '../../assets/icons/genderIcon_other_off.svg';
+import OtherOnIcon from '../../assets/icons/genderIcon_other_on.svg';
 import GlassesOffIcon from '../assets/icons/glassesIcon_off.svg';
 import GlassesOnIcon from '../assets/icons/glassesIcon_on.svg';
 import GlassesWhiteIcon from '../assets/icons/glassesWhiteIcon.svg';
@@ -75,9 +75,10 @@ import StarOnIcon from '../assets/icons/starIcon_on.svg';
 import StarOffIcon from '../assets/icons/starIcon_off.svg';
 import GuyIcon from '../../assets/icons/svgGuy.svg';
 import TimeIcon from '../assets/icons/timeIcon.svg';
-import UploadImageIcon from '../../assets/icons/uploadImg_icon.svg';
-import VerifiedIcon from '../assets/icons/verifiedIcon.svg';
+import UploadImageIcon from '../assets/icons/uploadImg_icon.svg';
+import VerifiedIcon from '../../assets/icons/verifiedIcon.svg';
 import VideoPlayIcon from '../assets/icons/videoPlayIcon.svg';
+import Warning from '../../assets/icons/warning_on.svg';
 
 const DEFAULT_ICON_SIZE = 24;
 const DEFAULT__ICON_COLOR = 'white';
@@ -109,87 +110,31 @@ const Icon: React.FC<IconProps> = ({ name, size, color }) => {
         />
       );
     case 'close':
-      return (
-        <CloseIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'private':
-      return (
-        <PrivateIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'commercial':
-      return (
-        <CommercialIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'lock-on':
-      return (
-        <LockOnIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'lock-off':
-      return (
-        <LockOffIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'location-me':
-      return (
-        <CurrentLocationIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'free':
-      return (
-        <FreeIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'guy':
-      return (
-        <GuyIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
+      return <CloseIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'male-on':
+      return <ManOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} color='#00ff00' />;
+    case 'male-off':
+      return <ManOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'female-on':
+      return <FemaleOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'female-off':
+      return <FemaleOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'gender-other-off':
+      return <OtherOffIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'gender-other-on':
+      return <OtherOnIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
     case 'camera':
-      return (
-        <CameraFrontIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
-    case 'upload':
-      return (
-        <UploadImageIcon
-          width={size || DEFAULT_ICON_SIZE}
-          height={size || DEFAULT_ICON_SIZE}
-          color={color || DEFAULT__ICON_COLOR}
-        />
-      );
+      return <CameraIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'camera-front':
+      return <CameraFrontIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'gallery':
+      return <GalleryIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'warning':
+      return <Warning width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
+    case 'verify':
+      return <VerifiedIcon width={size || DEFAULT_ICON_SIZE} height={size || DEFAULT_ICON_SIZE} />;
     default:
-      return null;
+      return null 
   }
 };
 

@@ -21,7 +21,7 @@ const EditNumber = (props: ResetMobileScreen) => {
         open={openCountryModal}
         onClose={() => setOpenCountryModal(!openCountryModal)}
       />
-      <SelectPhoneNumber onPress={(e) => setOpenCountryModal(!openCountryModal)} />
+      <SelectPhoneNumber onPress={() => setOpenCountryModal(!openCountryModal)} />
       <View style={{ marginTop: 25 }}>
         <CButton title="Submit" color="white" bgColor={Colors.$primary} />
       </View>
