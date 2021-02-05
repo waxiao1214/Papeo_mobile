@@ -23,7 +23,7 @@ const App: any = () => {
         <ProfileEditLocation />
         <ProfileEditBasicInfoModal />
         {/* <ProfileVerifyPhotoModal /> */}
-        {/* <ProfileRemoveIdentvideoModal /> */}
+        <ProfileRemoveIdentvideoModal />
         <ProfileEditPhotoModal />
         <ProfileEditDescriptionModal />
         <ProfileIdentvideoUploadedModal />
