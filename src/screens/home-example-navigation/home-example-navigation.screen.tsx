@@ -14,10 +14,10 @@ const HomeExampleNavigation: FC = () => {
       <Button
       color={'white'}
         title="Terms And Conditions Screen"
-        onPress={() => navigation.replace('TermsConditionsScreen')}
+        onPress={() => navigation.navigate('TermsConditionsScreen')}
       />
-      <Button color={'white'} title="Login Screen" onPress={() => navigation.replace('LoginScreen')} />
-      <Button color={'white'} title="CreatePartyScreen" onPress={() => navigation.replace('CreatePartyScreen')} />
+      <Button color={'white'} title="Login Screen" onPress={() => navigation.navigate('LoginScreen')} />
+      <Button color={'white'} title="CreatePartyScreen" onPress={() => navigation.navigate('CreatePartyScreen')} />
       <Button color={'white'} title="open verifyModal" onPress={() => dispatch(showLoginVerifyEmail())} />
     </View>
   );
