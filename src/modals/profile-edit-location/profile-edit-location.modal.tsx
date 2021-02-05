@@ -15,7 +15,7 @@ const ProfileEditLocationModal = () => {
   const dispatch = useDispatch();
   const [bgFadeAnimation] = useState(new Animated.Value(0));
   const profileEditLocationModal = useSelector((state:any) => state.profileEditLocationModal)
-  console.log(profileEditLocationModal)
+  
   if(!profileEditLocationModal.isVisible) {
     return null;
   }
